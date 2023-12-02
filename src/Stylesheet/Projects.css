@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext");
+
+.header {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg");
+}
+
+.project-card {
+  border: 3px solid rgba(200, 137, 230, 0.637) !important;
+  background-color: #1f2029;
+  color: #fff;
+}
+
+.card-title {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.images {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  padding: 10px;
+  align-self: center;
+}
+
+.images:hover {
+  transform: scale(1.05);
+}
+
+.parallax-effect {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  .images {
+    width: 210px;
+    height: 210px;
+    margin: 10px;
+    padding: 10px;
+    align-self: center;
+  }
+
+ 
+  .project-card {
+    padding: 10px;
+    border: none !important;
+  }
+}
+
+.dark-project-h1 {
+  color: #fff;
+  font-weight: lighter;
+}

@@ -1,0 +1,35 @@
+/* Me.css */
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext");
+
+.header {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg");
+}
+
+.me-h2 {
+  color: #fff;
+  font-weight:lighter;
+}
+
+.vertical-line {
+  width: 4px;
+  background-color: #0af9d1;
+}
+
+
+.typing-container {
+  white-space: pre-line;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.card {
+  background-color: #1f2029;
+  color: #fff;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .vertical-line {
+    display: none;
+  }
+}
