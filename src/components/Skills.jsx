@@ -15,7 +15,7 @@ function Skills() {
     toast.info("FRONTEND: React.js, JavaScript, HTML, CSS, Bootstrap", {
       position: toast.POSITION.BOTTOM_CENTER,
       style: {
-       fontWeight: "bold"
+        fontWeight: "bold",
       },
     });
   };
@@ -25,8 +25,8 @@ function Skills() {
     toast.info("BACKEND: Node.js, Express.js, MongoDB, Git", {
       position: toast.POSITION.BOTTOM_CENTER,
       style: {
-        fontWeight: "bold"
-       },
+        fontWeight: "bold",
+      },
     });
   };
 
@@ -71,9 +71,6 @@ function Skills() {
           <h5 className="mx-auto font-weight-light p-2">Git</h5>
         </div>
       </div>
-
-      {/* ToastContainer for displaying toasts */}
-      <ToastContainer />
     </div>
   );
 }

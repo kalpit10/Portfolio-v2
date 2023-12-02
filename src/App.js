@@ -9,6 +9,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Resume from "./components/Resume";
 import Certifications from "./components/Certifications";
 import StartHeader from "./components/StartHeader";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App(props) {
   // const [isNavbarVisible, setIsNavbarVisible] = useState(true);
@@ -20,9 +22,6 @@ function App(props) {
 
       // Set isNavbarSticky to true when scrolled past the hero section
       setIsNavbarSticky(true);
-
-      // Set isNavbarVisible to true when scrolled down a bit to show the navbar with animation
-      // setIsNavbarVisible(scrolled > window.innerHeight / 2); // Adjust the scroll threshold as needed
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -31,18 +30,6 @@ function App(props) {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  // const [darkMode, setDarkMode] = useState(() => {
-  //   // Retrieve dark mode preference from localStorage or use default value
-  //   return localStorage.getItem("darkMode") === "true";
-  // });
-
-  // const toggleDarkMode = () => {
-  //   const newDarkMode = !darkMode;
-  //   setDarkMode(newDarkMode);
-  //   // Save the dark mode preference to localStorage
-  //   localStorage.setItem("darkMode", newDarkMode.toString());
-  // };
 
   return (
     <div className={`App`}>
@@ -71,6 +58,7 @@ function App(props) {
           />
           <Route path="/resumepage" element={<Resume />} />
         </Routes>
+        <ToastContainer />
       </BrowserRouter>
     </div>
   );
