@@ -4,7 +4,7 @@ import { IoLogoReact } from "react-icons/io5";
 import { FaNode, FaCss3, FaBootstrap, FaGit } from "react-icons/fa";
 import { TiHtml5 } from "react-icons/ti";
 import { SiExpress, SiMongodb } from "react-icons/si";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../Stylesheet/Skills.css";
 import "../App.css";

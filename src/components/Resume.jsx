@@ -5,7 +5,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../Stylesheet/Resume.css";
 
@@ -13,6 +13,7 @@ function Resume() {
   const navigate = useNavigate();
 
   useEffect(() => {
+    console.log("Mounted");
     toast.info("Welcome to Kalpit Swami's Resume!", {
       position: toast.POSITION.TOP_RIGHT,
     });
@@ -192,7 +193,6 @@ function Resume() {
           </ul>
         </VerticalTimelineElement>
       </VerticalTimeline>
-      <ToastContainer />
     </div>
   );
 }
