@@ -5,9 +5,6 @@ import "../App.css";
 
 // Me.jsx
 function Me(props) {
-  // const fullText =
-  //   "A tech enthusiast on a journey to explore the world of web development. My experience includes projects like 'Resumaid,' where I crafted user-friendly solutions. I'm proficient in JavaScript, React.js, and more. Beyond coding, I'm captivated by AI/ML, enjoy immersive video games, and am passionate about sports.";
-
   return (
     <div className={`header app d-flex align-items-center container`}>
       {/* All elements in one row */}
@@ -36,16 +33,13 @@ function Me(props) {
               onInit={(typewriter) => {
                 typewriter
                   .typeString(
-                    "A tech enthusiast on a journey to explore the world of web development."
+                    "As a recent graduate in Computer Applications, I'm embarking on a journey to explore the vast realms of technology."
                   )
                   .typeString(
-                    "My experience includes projects like 'Resumaid,' where I crafted user-friendly solutions."
+                    "Armed with a passion for MERN stack development, I am eager to dive into the dynamic world of cybersecurity and cloud computing."
                   )
                   .typeString(
-                    "I'm proficient in JavaScript, React.js, and more."
-                  )
-                  .typeString(
-                    "Beyond coding, I'm captivated by AI/ML, enjoy immersive video games, and am passionate about sports."
+                    "With a fresh perspective, I am ready to contribute, learn, and grow in the ever-evolving tech landscape."
                   )
                   .start();
               }}
