@@ -2,7 +2,7 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import "../Stylesheet/Me.css";
 import "../App.css";
-import Me from "../images/Me.png";
+import MyPhoto from "../images/Me.png";
 
 // Me.jsx
 function Me(props) {
@@ -14,7 +14,7 @@ function Me(props) {
         <div className="col-12 col-md-4 text-center">
           <h1 className="me-h2 py-5">ABOUT ME</h1>
           <img
-            src={Me}
+            src={MyPhoto}
             className="img-fluid rounded-circle mb-3"
             style={{ maxWidth: "150px" }}
             alt="Kalpit Swami"
