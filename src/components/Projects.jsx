@@ -80,7 +80,7 @@ function Projects(props) {
                     to enhance your job applications..
                   </p>
                   <div className="justify-content-center d-flex mt-3">
-                    <Link to="https://github.com/kalpit10/RESUMAID../tree/main">
+                    <Link to="https://github.com/kalpit10/Resumaid">
                       <FaGithub />
                     </Link>
                   </div>
