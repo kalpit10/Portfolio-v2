@@ -2,6 +2,7 @@ import React from "react";
 import "../Stylesheet/Projects.css";
 import { FaGithub } from "react-icons/fa";
 import resumaidLogo from "../images/logodiv1.jpeg";
+import ShreniEducation from "../images/Shreni.png";
 import "../App.css";
 import { Link } from "react-router-dom";
 import Tilt from "react-parallax-tilt";
@@ -27,26 +28,24 @@ function Projects(props) {
             >
               <div className="card project-card">
                 <img
-                  src="https://cdn.dotpe.in/longtail/store-logo/6896975/8kgvRvdM.jpeg"
+                  src={ShreniEducation}
                   className="card-img-top images"
                   alt="Fresh Meals"
                 />
                 <div className="card-body">
                   <h5 className="card-title text-center">
-                    <a href="https://freshmeals-project.web.app/">
-                      Fresh Meals
-                    </a>
+                    <a href="https://shrenieducation.com/">Shreni Education</a>
                   </h5>
                   <p className="card-text">
-                    Experience seamless food ordering with our React-based web
-                    app powered by Firebase. Select delicious items from the
-                    restaurant menu, easily manage your cart, and view the total
-                    order cost. Upon submission, provide your address and
-                    pincode, and let Firebase efficiently handle and store your
-                    orders for a hassle-free dining experience.
+                    Developed the WebApp as a freelance project using ReactJS,
+                    Tailwind CSS, and EmailJS. This dynamic web application
+                    provides detailed information about the coaching institute’s
+                    courses, faculty, and services, ensuring a seamless user
+                    experience and effective communication through integrated
+                    email functionalities.
                   </p>
                   <div className="justify-content-center d-flex mt-3">
-                    <Link to="https://github.com/kalpit10/FreshMeals">
+                    <Link to="https://github.com/kalpit10/Shreni-Education">
                       <FaGithub />
                     </Link>
                   </div>
