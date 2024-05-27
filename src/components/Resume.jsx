@@ -8,6 +8,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../Stylesheet/Resume.css";
+import Header from "../components/Header";
 
 function Resume() {
   const navigate = useNavigate();
@@ -30,6 +31,7 @@ function Resume() {
 
   return (
     <div className="resume-container header app">
+      <Header />
       <button
         onClick={() => navigate("/")}
         type="button"
@@ -70,7 +72,7 @@ function Resume() {
           <p className="vertical-timeline-element-subtitle">
             Jagannath International Management School, New Delhi
           </p>
-          <p>9.2 GPA (Overall)</p>
+          <p>9.28 GPA (Overall)</p>
         </VerticalTimelineElement>
 
         {/* Certifications Toast */}
@@ -116,6 +118,7 @@ function Resume() {
             <li>Express.js</li>
             <li>MongoDB</li>
             <li>Bootstrap</li>
+            <li>TailWind</li>
             <li>Git</li>
             <li>HTML</li>
             <li>CSS</li>
@@ -134,6 +137,20 @@ function Resume() {
           <h3 className="vertical-timeline-element-title">Projects</h3>
           <ul>
             <li>
+              <li>
+                <strong>Shreni Education</strong>
+                <ul>
+                  <li>
+                    Developed Shreni Education’s website, providing
+                    comprehensive information about courses, faculty, and
+                    services, ensuring a user-friendly experience and integrated
+                    communication.
+                  </li>
+                  <li className="font-weight-bold">
+                    Tech Stack: React JS, Tailwind, EmailJS
+                  </li>
+                </ul>
+              </li>
               <strong>Resumaid</strong>
               <ul>
                 <li>
@@ -144,17 +161,9 @@ function Resume() {
                   ATS capabilities for resume scoring and user login for data
                   access.
                 </li>
-                <li>Tech Stack: MERN (MongoDB, ExpressJS, ReactJS, NodeJS)</li>
-              </ul>
-            </li>
-            <li>
-              <strong>Freshmeals (Food Order Website)</strong>
-              <ul>
-                <li>
-                  Responsive website for online food ordering with Firebase
-                  integration.
+                <li className="font-weight-bold">
+                  Tech Stack: MERN (MongoDB, ExpressJS, ReactJS, NodeJS)
                 </li>
-                <li>Tech Stack: React JS, Firebase</li>
               </ul>
             </li>
             <li>
@@ -167,6 +176,9 @@ function Resume() {
                 <li>
                   Integrated seamless navigation showcasing skills, projects,
                   and resume.
+                </li>
+                <li className="font-weight-bold">
+                  Tech Stack: ReactJS, BootStrap
                 </li>
               </ul>
             </li>
