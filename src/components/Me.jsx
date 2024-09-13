@@ -45,7 +45,7 @@ function Me(props) {
                   .start();
               }}
               options={{
-                delay: 0, // milliseconds between each keystroke
+                delay: 10, // milliseconds between each keystroke
               }}
             />
           </div>

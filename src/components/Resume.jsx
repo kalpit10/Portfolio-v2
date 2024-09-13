@@ -9,6 +9,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../Stylesheet/Resume.css";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 function Resume() {
   const navigate = useNavigate();
@@ -49,7 +50,7 @@ function Resume() {
       </button>
       <h1 className="h1-resume">Kalpit Swami</h1>
       <p className="header-para">
-        Email: kalpit.swami@gmail.com || Location: Faridabad, IN
+        Email: kalpit.swami@gmail.com || Location: Toronto, Canada
       </p>
 
       <VerticalTimeline>
@@ -66,6 +67,13 @@ function Resume() {
           }}
           position="left"
         >
+          <h3 className="vertical-timeline-element-title">
+            Cybersecurity & Threat Management
+          </h3>
+          <p className="vertical-timeline-element-subtitle">
+            Seneca College of Applied Arts & Technology
+          </p>
+          <hr />
           <h3 className="vertical-timeline-element-title">
             Bachelors In Computer Application
           </h3>
@@ -205,6 +213,7 @@ function Resume() {
           </ul>
         </VerticalTimelineElement>
       </VerticalTimeline>
+      <Footer />
     </div>
   );
 }

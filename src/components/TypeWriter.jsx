@@ -8,6 +8,7 @@ function Typewriter() {
       <TypeWriter
         options={{
           strings: [
+            "CyberSecurity",
             "MERN STACK DEVELOPER",
             "JAVASCRIPT",
             "REACT.JS",
