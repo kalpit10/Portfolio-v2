@@ -7,10 +7,10 @@ import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Resume from "./components/Resume";
-import Certifications from "./components/Certifications";
 import StartHeader from "./components/StartHeader";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ContactForm from "./components/ContactForm";
 
 function App(props) {
   // const [isNavbarVisible, setIsNavbarVisible] = useState(true);
@@ -51,7 +51,7 @@ function App(props) {
                 <Me />
                 <Skills />
                 <Projects />
-                <Certifications />
+                <ContactForm />
                 <Footer />
               </div>
             }

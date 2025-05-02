@@ -8,12 +8,10 @@ function Typewriter() {
       <TypeWriter
         options={{
           strings: [
-            "CyberSecurity",
-            "MERN STACK DEVELOPER",
-            "JAVASCRIPT",
-            "REACT.JS",
-            "NODE.JS",
-            "MONGODB",
+            "Cybersecurity | Cloud | DevSecOps",
+            "Full-Stack Developer",
+            "Building Secure & Scalable Apps",
+            "Docker • GitHub • Linux • AWS",
           ],
           delay: 70,
           autoStart: true,

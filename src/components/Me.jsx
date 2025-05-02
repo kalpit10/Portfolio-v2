@@ -34,13 +34,13 @@ function Me(props) {
               onInit={(typewriter) => {
                 typewriter
                   .typeString(
-                    "As a recent graduate in Computer Applications, I'm embarking on a journey to explore the vast realms of technology."
+                    "I'm a Cybersecurity graduate with a background in Computer Applications and hands-on experience in MERN stack development. "
                   )
                   .typeString(
-                    "Armed with a passion for MERN stack development, I am eager to dive into the dynamic world of cybersecurity and cloud computing."
+                    "Currently exploring cloud architecture and DevSecOps, I combine development skills with a security-first mindset. "
                   )
                   .typeString(
-                    "With a fresh perspective, I am ready to contribute, learn, and grow in the ever-evolving tech landscape."
+                    "I enjoy building secure, scalable web apps and working with cloud-native tools, aiming to grow with forward-thinking tech teams."
                   )
                   .start();
               }}

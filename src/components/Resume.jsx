@@ -57,30 +57,53 @@ function Resume() {
         {/* Education */}
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          contentStyle={{ background: "#3498db", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  #3498db" }}
-          date="2020-2023"
+          contentStyle={{
+            background: "#1f2029", // dark background
+            color: "#f8f9fa",
+            borderRadius: "12px",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.3)",
+            padding: "24px",
+          }}
+          contentArrowStyle={{ borderRight: "7px solid #1f2029" }}
+          date="2020 – 2023"
           iconStyle={{
-            background: "#3498db",
+            background: "#10b981", // elegant green
             color: "#fff",
-            borderColor: "#e74c3c",
+            borderColor: "#0d6efd", // Bootstrap blue
           }}
           position="left"
         >
-          <h3 className="vertical-timeline-element-title">
-            Cybersecurity & Threat Management
-          </h3>
-          <p className="vertical-timeline-element-subtitle">
-            Seneca College of Applied Arts & Technology
-          </p>
-          <hr />
-          <h3 className="vertical-timeline-element-title">
-            Bachelors In Computer Application
-          </h3>
-          <p className="vertical-timeline-element-subtitle">
-            Jagannath International Management School, New Delhi
-          </p>
-          <p>9.28 GPA (Overall)</p>
+          {/* Cloud Architecture */}
+          <div className="mb-4">
+            <h5 className="fw-bold mb-1">
+              Cloud Architecture & Administration
+            </h5>
+            <p className="text-muted mb-0">
+              Seneca College of Applied Arts & Technology
+            </p>
+          </div>
+
+          <hr className="border-secondary" />
+
+          {/* Cybersecurity */}
+          <div className="mb-4">
+            <h5 className="fw-bold mb-1">Cybersecurity & Threat Management</h5>
+            <p className="text-muted mb-1">
+              Seneca College of Applied Arts & Technology
+            </p>
+            <p className="mb-0 text-success">GPA: 4.0 / 4.0</p>
+          </div>
+
+          <hr className="border-secondary" />
+
+          {/* BCA */}
+          <div>
+            <h5 className="fw-bold mb-1">Bachelor of Computer Applications</h5>
+            <p className="text-muted mb-1">
+              Jagannath International Management School, New Delhi
+            </p>
+            <p className="mb-0 text-success">GPA: 9.28 / 10.0</p>
+          </div>
         </VerticalTimelineElement>
 
         {/* Certifications Toast */}
@@ -124,12 +147,12 @@ function Resume() {
             <li>React.js</li>
             <li>Node.js</li>
             <li>Express.js</li>
+            <li>Docker</li>
+            <li>Linux</li>
             <li>MongoDB</li>
             <li>Bootstrap</li>
             <li>TailWind</li>
             <li>Git</li>
-            <li>HTML</li>
-            <li>CSS</li>
           </ul>
         </VerticalTimelineElement>
 
@@ -162,31 +185,24 @@ function Resume() {
               <strong>Resumaid</strong>
               <ul>
                 <li>
-                  A Web Application for generating resumes with PDF download
-                  functionality.
+                  Developed a MERN stack web application that allows users to
+                  generate professional resumes using customizable templates
+                  with PDF download support.
                 </li>
                 <li>
-                  ATS capabilities for resume scoring and user login for data
-                  access.
+                  Integrated an ATS scoring system to evaluate resumes based on
+                  predefined rules and provide feedback for optimization.
+                </li>
+                <li>
+                  Implemented secure user authentication with login-based access
+                  to saved resume data and editable resume history.
+                </li>
+                <li>
+                  Added security features like encrypted data storage, rate
+                  limiting, IP-based blocking, and MFA via TOTP QR codes.
                 </li>
                 <li className="font-weight-bold">
-                  Tech Stack: MERN (MongoDB, ExpressJS, ReactJS, NodeJS)
-                </li>
-              </ul>
-            </li>
-            <li>
-              <strong>Personal Portfolio</strong>
-              <ul>
-                <li>
-                  Dynamic personal portfolio using React.js and Bootstrap for a
-                  clean and responsive design.
-                </li>
-                <li>
-                  Integrated seamless navigation showcasing skills, projects,
-                  and resume.
-                </li>
-                <li className="font-weight-bold">
-                  Tech Stack: ReactJS, BootStrap
+                  Tech Stack: MongoDB, Express.js, React.js, Node.js, Docker
                 </li>
               </ul>
             </li>
