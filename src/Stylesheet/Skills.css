@@ -5,6 +5,7 @@
 }
 
 .dark-skill {
+  color: #fff !important;
   font-weight: lighter;
   transition: transform 0.2s ease-in-out;
   transform: translateX(0);
@@ -36,6 +37,7 @@
 
 @media (max-width: 768px) {
   .dark-skill {
+    color: #fff;
     left: 0.2rem;
   }
 }
