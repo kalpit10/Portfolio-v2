@@ -34,18 +34,18 @@ function Me(props) {
               onInit={(typewriter) => {
                 typewriter
                   .typeString(
-                    "I'm a Cybersecurity graduate with a background in Computer Applications and hands-on experience in MERN stack development. "
+                    "I'm a cloud computing enthusiast with a solid grounding in cybersecurity, passionate about building secure, scalable web solutions. "
                   )
                   .typeString(
-                    "Currently exploring cloud architecture and DevSecOps, I combine development skills with a security-first mindset. "
+                    "Currently advancing my skills through a postgraduate program in Cloud Architecture. I love working at the crossroads of infrastructure, security, and automation. "
                   )
                   .typeString(
-                    "I enjoy building secure, scalable web apps and working with cloud-native tools, aiming to grow with forward-thinking tech teams."
+                    "I enjoy designing robust cloud environments and bringing ideas to life with clean, efficient code."
                   )
                   .start();
               }}
               options={{
-                delay: 10, // milliseconds between each keystroke
+                delay: 10,
               }}
             />
           </div>
