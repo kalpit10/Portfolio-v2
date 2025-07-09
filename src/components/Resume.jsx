@@ -65,7 +65,7 @@ function Resume() {
             padding: "24px",
           }}
           contentArrowStyle={{ borderRight: "7px solid #1f2029" }}
-          date="2020 – 2023"
+          date="2020 – Present"
           iconStyle={{
             background: "#10b981", // elegant green
             color: "#fff",
@@ -79,7 +79,7 @@ function Resume() {
               Cloud Architecture & Administration
             </h5>
             <p className="text-muted mb-0">
-              Seneca College of Applied Arts & Technology
+              Seneca College of Applied Science & Engineering Technology
             </p>
           </div>
 
@@ -89,9 +89,9 @@ function Resume() {
           <div className="mb-4">
             <h5 className="fw-bold mb-1">Cybersecurity & Threat Management</h5>
             <p className="text-muted mb-1">
-              Seneca College of Applied Arts & Technology
+              Seneca College of Applied Science & Engineering Technology
             </p>
-            <p className="mb-0 text-success">GPA: 4.0 / 4.0</p>
+            <p className="mb-0 text-success">GPA: 4.0 / 4.0 (High Honours)</p>
           </div>
 
           <hr className="border-secondary" />
@@ -110,7 +110,6 @@ function Resume() {
         <VerticalTimelineElement
           className="vertical-timeline-element--certifications"
           contentStyle={{ background: "#9b59b6", color: "#fff" }}
-          date="2020-2022"
           contentArrowStyle={{ borderRight: "7px solid  #9b59b6" }}
           iconStyle={{ background: "#9b59b6", color: "#fff" }}
           position="right"
@@ -143,16 +142,16 @@ function Resume() {
         >
           <h3 className="vertical-timeline-element-title">Skills</h3>
           <ul className="custom-list">
+            <li>AWS Services</li>
+            <li>Docker</li>
+            <li>Linux</li>
+            <li>Git</li>
+            <li>Bash</li>
+            <li>MongoDB</li>
             <li>JavaScript</li>
             <li>React.js</li>
             <li>Node.js</li>
             <li>Express.js</li>
-            <li>Docker</li>
-            <li>Linux</li>
-            <li>MongoDB</li>
-            <li>Bootstrap</li>
-            <li>TailWind</li>
-            <li>Git</li>
           </ul>
         </VerticalTimelineElement>
 
@@ -161,7 +160,6 @@ function Resume() {
           className="vertical-timeline-element--projects"
           contentStyle={{ background: "#27ae60", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  #27ae60" }}
-          date="2021-Present"
           iconStyle={{ background: "#27ae60", color: "#fff" }}
           position="right"
         >
@@ -176,7 +174,8 @@ function Resume() {
                     comprehensive information about courses, faculty, and
                     services, ensuring a user-friendly experience and integrated
                     communication.
-                  </li>
+                  </li>{" "}
+                  &nbsp;
                   <li className="font-weight-bold">
                     Tech Stack: React JS, Tailwind, EmailJS
                   </li>
@@ -188,19 +187,23 @@ function Resume() {
                   Developed a MERN stack web application that allows users to
                   generate professional resumes using customizable templates
                   with PDF download support.
-                </li>
+                </li>{" "}
+                &nbsp;
                 <li>
                   Integrated an ATS scoring system to evaluate resumes based on
                   predefined rules and provide feedback for optimization.
-                </li>
+                </li>{" "}
+                &nbsp;
                 <li>
                   Implemented secure user authentication with login-based access
                   to saved resume data and editable resume history.
-                </li>
+                </li>{" "}
+                &nbsp;
                 <li>
                   Added security features like encrypted data storage, rate
                   limiting, IP-based blocking, and MFA via TOTP QR codes.
-                </li>
+                </li>{" "}
+                &nbsp;
                 <li className="font-weight-bold">
                   Tech Stack: MongoDB, Express.js, React.js, Node.js, Docker
                 </li>
@@ -214,17 +217,17 @@ function Resume() {
           className="vertical-timeline-element--achievements"
           contentStyle={{ background: "#f39c12", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  #f39c12" }}
-          date=""
           iconStyle={{ background: "#f39c12", color: "#fff" }}
           position="left"
         >
           <h3 className="vertical-timeline-element-title">Achievements</h3>
           <ul>
+            <li>President’s Honor List, Class of 2024.</li> &nbsp;
             <li>
               Core Member – National Service Scheme (NSS) of JIMS, Vasant Kunj
-            </li>
-            <li>Member of Placement cell of JIMS, Vasant Kunj</li>
-            <li>Core Member – IT Club (ENIGMA) of JIMS, Vasant Kunj</li>
+            </li>{" "}
+            &nbsp;
+            <li>Core Member – IT Club (ENIGMA) of JIMS, Vasant Kunj</li> &nbsp;
             <li>Silver Medalist in Badminton in CBSE Inter-Zonal Tournament</li>
           </ul>
         </VerticalTimelineElement>
