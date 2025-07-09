@@ -8,10 +8,10 @@ function Typewriter() {
       <TypeWriter
         options={{
           strings: [
-            "Cybersecurity | Cloud | DevSecOps",
-            "Full-Stack Developer",
-            "Building Secure & Scalable Apps",
-            "Docker • GitHub • Linux • AWS",
+            "Cloud • Security • Automation",
+            "Designing Resilient AWS Architectures",
+            "Cloud Engineering | Security by Design",
+            "Docker • Git • Linux • Bash",
           ],
           delay: 70,
           autoStart: true,
