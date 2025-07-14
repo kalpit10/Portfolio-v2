@@ -2,7 +2,7 @@ import React from "react";
 import { IoLogoJavascript } from "react-icons/io";
 import { IoLogoReact } from "react-icons/io5";
 import { FaNode, FaGit, FaDocker, FaLinux, FaAws } from "react-icons/fa";
-import { SiExpress, SiMongodb, SiGnubash } from "react-icons/si";
+import { SiMongodb, SiGnubash, SiTerraform } from "react-icons/si";
 // import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../Stylesheet/Skills.css";
@@ -15,7 +15,11 @@ function Skills() {
       <div className="row justify-content-center pb-5 py-4">
         <div className="col-xs-4 col-md-2 tech-icons">
           <FaAws />
-          <h5 className="mx-auto font-weight-light p-2">AWS</h5>
+          <h5 className="mx-auto font-weight-light p-2">Amazon Web Services</h5>
+        </div>
+        <div className="col-xs-4 col-md-2 tech-icons">
+          <SiTerraform />
+          <h5 className="mx-auto font-weight-light p-2">Terraform</h5>
         </div>
         <div className="col-xs-4 col-md-2 tech-icons">
           <FaDocker />
@@ -40,10 +44,6 @@ function Skills() {
         <div className="col-xs-4 col-md-2 tech-icons">
           <SiMongodb />
           <h5 className="mx-auto font-weight-light p-2 ">MongoDB</h5>
-        </div>
-        <div className="col-xs-4 col-md-2 tech-icons">
-          <SiExpress />
-          <h5 className="mx-auto font-weight-light p-2">Express.js</h5>
         </div>
 
         <div className="col-xs-4 col-md-2 tech-icons">
