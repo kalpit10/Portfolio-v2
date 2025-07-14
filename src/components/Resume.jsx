@@ -91,7 +91,7 @@ function Resume() {
             <p className="text-muted mb-1">
               Seneca College of Applied Science & Engineering Technology
             </p>
-            <p className="mb-0 text-success">GPA: 4.0 / 4.0 (High Honours)</p>
+            <p className="mb-0 text-success">GPA: 4.0 / 4.0 (High Honors)</p>
           </div>
 
           <hr className="border-secondary" />
@@ -106,7 +106,7 @@ function Resume() {
           </div>
         </VerticalTimelineElement>
 
-        {/* Certifications Toast */}
+        {/* Certifications Toast
         <VerticalTimelineElement
           className="vertical-timeline-element--certifications"
           contentStyle={{ background: "#9b59b6", color: "#fff" }}
@@ -125,7 +125,7 @@ function Resume() {
               <p>- Zero To Mastery Academy</p>
             </li>
           </ul>
-        </VerticalTimelineElement>
+        </VerticalTimelineElement> */}
 
         {/* Skills Toast */}
 
@@ -138,11 +138,12 @@ function Resume() {
             color: "#fff",
             borderColor: "#e74c3c",
           }}
-          position="left"
+          position="right"
         >
           <h3 className="vertical-timeline-element-title">Skills</h3>
           <ul className="custom-list">
             <li>AWS Services</li>
+            <li>Terraform</li>
             <li>Docker</li>
             <li>Linux</li>
             <li>Git</li>
@@ -151,7 +152,6 @@ function Resume() {
             <li>JavaScript</li>
             <li>React.js</li>
             <li>Node.js</li>
-            <li>Express.js</li>
           </ul>
         </VerticalTimelineElement>
 
@@ -161,7 +161,7 @@ function Resume() {
           contentStyle={{ background: "#27ae60", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  #27ae60" }}
           iconStyle={{ background: "#27ae60", color: "#fff" }}
-          position="right"
+          position="left"
         >
           <h3 className="vertical-timeline-element-title">Projects</h3>
           <ul>
@@ -218,7 +218,7 @@ function Resume() {
           contentStyle={{ background: "#f39c12", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  #f39c12" }}
           iconStyle={{ background: "#f39c12", color: "#fff" }}
-          position="left"
+          position="right"
         >
           <h3 className="vertical-timeline-element-title">Achievements</h3>
           <ul>
