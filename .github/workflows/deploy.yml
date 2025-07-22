@@ -1,0 +1,50 @@
+# Name of this Github Action workflow
+name: Deploy React portfolio to S3
+
+on:
+  push:
+    branches:
+      - main # Triggers when code is pushed to the main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout Github repo's code into the runner
+      - name: Checkout repo code
+        uses: actions/checkout@v3
+
+      # Step 2: Setup Node.js environment (needed for building React app)
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      # Step 3: Install project dependencies using npm
+      - name: Install dependencies
+        run: npm ci # 'ci' is faster and more consistent than 'install' for CI/CD
+
+      # Step 4: Create a temporary .env file with EmailJS secrets
+      - name: Create .env file
+        run: |
+          echo "REACT_APP_EMAILJS_SERVICE_ID=${{ secrets.REACT_APP_EMAILJS_SERVICE_ID }}" >> .env
+          echo "REACT_APP_EMAILJS_TEMPLATE_ID=${{ secrets.REACT_APP_EMAILJS_TEMPLATE_ID }}" >> .env
+          echo "REACT_APP_EMAILJS_PUBLIC_KEY=${{ secrets.REACT_APP_EMAILJS_PUBLIC_KEY }}" >> .env
+
+      # Step 5: Build the production version of the React app
+      - name: Build the React app
+        run: npm run build # Builds the app into the 'build' directory
+
+      # Step 6: Upload the build folder to the S3 bucket
+      - name: Deploy to S3
+        uses: jakejarvis/s3-sync-action@master # A ready-to-use GitHub Action for syncing files to S3
+        with:
+          args: --delete # Remove any extra files from S3 that no longer exist locally
+        env:
+          AWS_S3_BUCKET: kalpitswami-portfolio
+          AWS_REGION: us-east-1
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          SOURCE_DIR: build # This is the folder created by `npm run build`
+
