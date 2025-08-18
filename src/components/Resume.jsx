@@ -222,33 +222,47 @@ function Resume() {
                   </li>
                 </ul>
               </li>
-              <strong>Resumaid</strong>
-              <ul>
-                <li>
-                  Developed a MERN stack web application that allows users to
-                  generate professional resumes using customizable templates
-                  with PDF download support.
-                </li>{" "}
-                &nbsp;
-                <li>
-                  Integrated an ATS scoring system to evaluate resumes based on
-                  predefined rules and provide feedback for optimization.
-                </li>{" "}
-                &nbsp;
-                <li>
-                  Implemented secure user authentication with login-based access
-                  to saved resume data and editable resume history.
-                </li>{" "}
-                &nbsp;
-                <li>
-                  Added security features like encrypted data storage, rate
-                  limiting, IP-based blocking, and MFA via TOTP QR codes.
-                </li>{" "}
-                &nbsp;
-                <li className="font-weight-bold">
-                  Tech Stack: MongoDB, Express.js, React.js, Node.js, Docker
-                </li>
-              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <li>
+                <strong>Resumaid</strong>
+                <ul>
+                  <li>
+                    Developed a MERN stack web application that allows users to
+                    generate professional resumes using customizable templates
+                    with PDF download support.
+                  </li>{" "}
+                  &nbsp;
+                  <li>
+                    Integrated CloudWatch monitoring using CW Agent, enabled
+                    bastion-based SSH access, resolved ALB Health check and
+                    IMDSv2 agent issues, and established secure MySQL RDS
+                    connectivity for dynamic and resilient infrastructure
+                    management.
+                  </li>
+                  &nbsp;
+                  <li>
+                    Integrated an ATS scoring system to evaluate resumes based
+                    on predefined rules and provide feedback for optimization.
+                  </li>{" "}
+                  &nbsp;
+                  <li>
+                    Implemented secure user authentication with login-based
+                    access to saved resume data and editable resume history.
+                  </li>{" "}
+                  &nbsp;
+                  <li>
+                    Added security features like encrypted data storage, rate
+                    limiting, IP-based blocking, and MFA via TOTP QR codes.
+                  </li>{" "}
+                  &nbsp;
+                  <li className="font-weight-bold">
+                    Tech Stack: MongoDB, Express.js, React.js, Node.js, Docker
+                  </li>
+                </ul>
+              </li>
             </li>
           </ul>
         </VerticalTimelineElement>
