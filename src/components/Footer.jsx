@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaMedium } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { CiMail } from "react-icons/ci";
 import "../Stylesheet/Footer.css";
@@ -31,6 +31,14 @@ const Footer = (props) => {
             >
               <FaGithub />
             </Link>
+          </div>
+          <div className="mx-auto social-icons pr-3">
+            <a
+              href="https://medium.com/@kalpit.swami"
+              className="icon-colour home-social-icons"
+            >
+              <FaMedium />
+            </a>
           </div>
           <div className="mx-auto social-icons">
             <a

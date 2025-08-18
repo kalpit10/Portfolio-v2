@@ -155,7 +155,7 @@ function Resume() {
           </ul>
         </VerticalTimelineElement>
 
-        {/* Projects */}
+        {/* Experience  */}
         <VerticalTimelineElement
           className="vertical-timeline-element--projects"
           contentStyle={{ background: "#27ae60", color: "#fff" }}
@@ -163,7 +163,9 @@ function Resume() {
           iconStyle={{ background: "#27ae60", color: "#fff" }}
           position="left"
         >
-          <h3 className="vertical-timeline-element-title">Projects</h3>
+          <h3 className="vertical-timeline-element-title">
+            Experience - Freelance
+          </h3>
           <ul>
             <li>
               <li>
@@ -178,6 +180,45 @@ function Resume() {
                   &nbsp;
                   <li className="font-weight-bold">
                     Tech Stack: React JS, Tailwind, EmailJS
+                  </li>
+                </ul>
+              </li>
+            </li>
+          </ul>
+        </VerticalTimelineElement>
+
+        {/* Projects */}
+        <VerticalTimelineElement
+          className="vertical-timeline-element--projects"
+          contentStyle={{ background: "#0a86f3ff", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  #27ae60" }}
+          iconStyle={{ background: "#27ae60", color: "#fff" }}
+          position="right"
+        >
+          <h3 className="vertical-timeline-element-title">Projects</h3>
+          <ul>
+            <li>
+              <li>
+                <strong>3-Tier AWS Architecture using Terraform</strong>
+                <ul>
+                  <li>
+                    Designed and deployed a scalable 3-tier AWS architecture
+                    using modular Terraform, provisioning VPC, public/private
+                    subnets, ALB, Auto Scaling Group, and RDS with secure
+                    networking and automated EC2 launch templates.
+                  </li>{" "}
+                  &nbsp;
+                  <li>
+                    Integrated CloudWatch monitoring using CW Agent, enabled
+                    bastion-based SSH access, resolved ALB Health check and
+                    IMDSv2 agent issues, and established secure MySQL RDS
+                    connectivity for dynamic and resilient infrastructure
+                    management.
+                  </li>
+                  &nbsp;
+                  <li className="font-weight-bold">
+                    Tech Stack: Terraform, AWS (VPC, EC2, RDS, ALB), CloudWatch,
+                    Auto Scaling
                   </li>
                 </ul>
               </li>
@@ -218,13 +259,15 @@ function Resume() {
           contentStyle={{ background: "#f39c12", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  #f39c12" }}
           iconStyle={{ background: "#f39c12", color: "#fff" }}
-          position="right"
+          position="left"
         >
           <h3 className="vertical-timeline-element-title">Achievements</h3>
           <ul>
             <li>President’s Honor List, Class of 2024.</li> &nbsp;
             <li>
-              Core Member – National Service Scheme (NSS) of JIMS, Vasant Kunj
+              Core Member – National Service Scheme (NSS), a student-led
+              community service and leadership program at JIMS, Vasant Kunj, New
+              Delhi.
             </li>{" "}
             &nbsp;
             <li>Core Member – IT Club (ENIGMA) of JIMS, Vasant Kunj</li> &nbsp;
