@@ -40,7 +40,6 @@
     align-self: center;
   }
 
- 
   .project-card {
     padding: 10px;
     border: none !important;
@@ -50,4 +49,20 @@
 .dark-project-h1 {
   color: #fff;
   font-weight: lighter;
+}
+
+.project-card {
+  min-height: 100%;
+}
+.project-img {
+  height: 220px; /* adjust to taste */
+  object-fit: cover; /* keep aspect ratio, crop overflow */
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* optional: keep icon row at bottom */
+.card-body .icon-link,
+.card-body .d-flex.gap-4 {
+  margin-top: auto;
 }
