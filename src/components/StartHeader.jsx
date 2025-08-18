@@ -1,7 +1,7 @@
 // StartHeader.jsx
 import React, { useState, useEffect } from "react";
 import "../Stylesheet/StartHeader.css";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaMedium } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import TypeWriter from "./TypeWriter";
 
@@ -44,6 +44,14 @@ function StartHeader() {
             className="icon-colour home-social-icons"
           >
             <FaGithub />
+          </Link>
+        </div>
+        <div className="py-3 mt-4 pr-3 social-icons">
+          <Link
+            to="https://medium.com/@kalpit.swami"
+            className="icon-colour home-social-icons"
+          >
+            <FaMedium />
           </Link>
         </div>
         {/* Add other social media icons as needed */}
