@@ -191,8 +191,8 @@ function Resume() {
         <VerticalTimelineElement
           className="vertical-timeline-element--projects"
           contentStyle={{ background: "#0a86f3ff", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  #27ae60" }}
-          iconStyle={{ background: "#27ae60", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  #0a86f3ff" }}
+          iconStyle={{ background: "#0a86f3ff", color: "#fff" }}
           position="right"
         >
           <h3 className="vertical-timeline-element-title">Projects</h3>
