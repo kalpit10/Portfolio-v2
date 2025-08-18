@@ -1,6 +1,6 @@
 import React from "react";
 import "../Stylesheet/Projects.css";
-import { FaGithub, FaMedium } from "react-icons/fa";
+import { FaGithub, FaMedium, FaLinkedinIn } from "react-icons/fa";
 import resumaidLogo from "../images/logodiv1.jpeg";
 import ShreniEducation from "../images/Shreni.png";
 import ThreeTierArch from "../images/3-Tier-Web-Arch.png";
@@ -17,7 +17,6 @@ function Projects() {
       <div className="container py-5 px-3">
         {/* 1 col on xs, 2 on md, 3 on lg+ */}
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-
           {/* ==== Project: 3-Tier AWS Architecture (FIRST) ==== */}
           <div className="col d-flex">
             <Tilt
@@ -59,7 +58,7 @@ function Projects() {
                       target="_blank"
                       rel="noreferrer"
                       aria-label="GitHub Repository"
-                      className="icon-link fs-4 mx-3"
+                      className="icon-link fs-4 mx-2"
                     >
                       <FaGithub />
                     </a>
@@ -68,9 +67,18 @@ function Projects() {
                       target="_blank"
                       rel="noreferrer"
                       aria-label="Medium Article"
-                      className="icon-link fs-4"
+                      className="icon-link fs-4 px-3"
                     >
                       <FaMedium />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/posts/kalpitswami_aws-terraform-cloudcomputing-activity-7363007220260749312-hdzz?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQM8GwBGpWqq6pEKclRv9Mh5Rqmcxx7Qio"
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label="LinkedIn Profile"
+                      className="icon-link fs-4"
+                    >
+                      <FaLinkedinIn />
                     </a>
                   </div>
                 </div>
@@ -109,9 +117,19 @@ function Projects() {
                       target="_blank"
                       rel="noreferrer"
                       aria-label="GitHub Repository"
-                      className="icon-link fs-4"
+                      className="icon-link fs-4 mx-3"
                     >
                       <FaGithub />
+                    </a>
+
+                    <a
+                      href="https://www.linkedin.com/posts/kalpitswami_cybersecurity-owasp-vapt-activity-7315881583159255041-RBga?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQM8GwBGpWqq6pEKclRv9Mh5Rqmcxx7Qio"
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label="LinkedIn Profile"
+                      className="icon-link fs-4 mx-2"
+                    >
+                      <FaLinkedinIn />
                     </a>
                   </div>
                 </div>
@@ -158,16 +176,24 @@ function Projects() {
                       target="_blank"
                       rel="noreferrer"
                       aria-label="GitHub Repository"
-                      className="icon-link fs-4"
+                      className="icon-link fs-4 mx-3"
                     >
                       <FaGithub />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/posts/kalpitswami_shreni-education-activity-7200806295833100289-Ds-P?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQM8GwBGpWqq6pEKclRv9Mh5Rqmcxx7Qio"
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label="LinkedIn Profile"
+                      className="icon-link fs-4 mx-2"
+                    >
+                      <FaLinkedinIn />
                     </a>
                   </div>
                 </div>
               </div>
             </Tilt>
           </div>
-
         </div>
       </div>
     </div>
