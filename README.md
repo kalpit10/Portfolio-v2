@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# 🌐 Kalpit Swami
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my personal cloud engineering portfolio, built to showcase my hands-on experience with AWS, DevOps tools, Infrastructure as Code, and secure, scalable architecture design.
 
-## Available Scripts
+🟢 **Live Website:** [www.kalpitswami.com](https://www.kalpitswami.com)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📌 About Me
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I'm a Cloud Architecture & Cybersecurity post-grad student from Seneca Polytechnic (Toronto), passionate about deploying modern, secure cloud-native applications using tools like:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **AWS** (VPC, ALB, EC2, RDS, S3, Lambda, IAM, CloudFront, EventBridge)
+- **Terraform** for Infrastructure as Code (modular 3-tier deployments)
+- **GitHub Actions** for CI/CD
+- **Docker** & **Bash scripting**
+- **React.js** for frontend development
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🔧 Featured Projects
 
-### `npm run build`
+### 🏗️ Scalable 3-Tier Web Architecture on AWS
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[🔗 GitHub Repo](https://github.com/kalpit10/3-Tier-Web-Architecture-Terraform)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Built a modular, production-style 3-tier infrastructure on AWS using Terraform
+- Configured VPC, public/private subnets, Auto Scaling Group, Application Load Balancer, Bastion Host, RDS MySQL
+- Included CloudWatch alarms, secure SSH access, and high availability setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+### 🌐 Serverless Portfolio Deployment
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+[🔗 Live Site](https://www.kalpitswami.com)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Deployed portfolio using **AWS S3 (static hosting)**, **CloudFront**, and **ACM (SSL)**
+- Managed DNS via **Namecheap** and automated deployment using **GitHub Actions CI/CD**
+- Secure contact form using **EmailJS**, with secrets stored via GitHub repository secrets
+- Infrastructure provisioned using Terraform
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🎓 Education
 
-## Learn More
+**Seneca College of Applied Arts and Technology**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Post-Graduate Certificate in **Cloud Architecture & Administration** (May 2025 – Dec 2025)
+- Post-Graduate Certificate in **Cybersecurity & Threat Management** (Sep 2024 – Apr 2025)
+- GPA: 4.0 / 4.0 (High Honors)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🧠 Areas of Interest
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Cloud Infrastructure (AWS/GCP)
+- Infrastructure as Code (Terraform, CloudFormation)
+- CI/CD Automation
+- Cloud Security
+- Serverless Architecture
+- Video Games
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🤝 Connect with Me
 
-### Making a Progressive Web App
+- 🔗 [LinkedIn](https://www.linkedin.com/in/kalpitswami)
+- 🧑‍💻 [GitHub](https://github.com/kalpit10)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> “Building scalable, secure, and automated systems — one cloud project at a time.”
