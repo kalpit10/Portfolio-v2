@@ -54,9 +54,8 @@ I'm a Cloud Architecture & Cybersecurity post-grad student from Seneca Polytechn
 ## 🧠 Areas of Interest
 
 - Cloud Infrastructure (AWS/GCP)
-- Infrastructure as Code (Terraform, CloudFormation)
+- Infrastructure as Code (Terraform)
 - CI/CD Automation
-- Cloud Security
 - Serverless Architecture
 - Video Games
 
