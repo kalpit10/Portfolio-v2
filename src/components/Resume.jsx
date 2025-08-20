@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   VerticalTimeline,
@@ -13,6 +13,7 @@ import Footer from "../components/Footer";
 
 function Resume() {
   const navigate = useNavigate();
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     console.log("Mounted");
@@ -20,6 +21,36 @@ function Resume() {
       position: toast.POSITION.TOP_RIGHT,
     });
   }, []);
+
+  const projects = [
+    {
+      title: "3-Tier AWS Architecture using Terraform",
+      bullets: [
+        "Deployed 3-tier VPC, ALB, ASG (EC2), and RDS with modular Terraform and least-privilege SGs.",
+        "CloudWatch Agent on EC2, bastion SSH, IMDSv2, dual NAT; costs and ops documented.",
+        "Launch templates, ALB health checks resolved; reusable IaC patterns.",
+      ],
+      tech: "Terraform, AWS (VPC, EC2, RDS, ALB), CloudWatch, Auto Scaling",
+    },
+    {
+      title: "Serverless Data Scraping & Notification Pipeline (AWS)",
+      bullets: [
+        "EventBridge → Lambda (Python/BeautifulSoup) → S3 JSON, SNS email, CloudWatch logs.",
+        "IAM roles for least-privilege; daily automation with end-to-end monitoring.",
+        "Traceable runs with structured logging and metrics.",
+      ],
+      tech: "Lambda (Python), EventBridge, S3, SNS, CloudWatch, IAM",
+    },
+    {
+      title: "Resumaid",
+      bullets: [
+        "MERN app for resume creation with templates, PDF export, and ATS checks.",
+        "Secure auth, rate limiting, encrypted storage, MFA (TOTP).",
+        "Editable history and profile management.",
+      ],
+      tech: "MongoDB, Express, React, Node, Docker",
+    },
+  ];
 
   const handleDownload = () => {
     const downloadLink = document.createElement("a");
@@ -187,84 +218,43 @@ function Resume() {
           </ul>
         </VerticalTimelineElement>
 
-        {/* Projects */}
         <VerticalTimelineElement
           className="vertical-timeline-element--projects"
-          contentStyle={{ background: "#0a86f3ff", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  #0a86f3ff" }}
+          contentStyle={{
+            background: "#0a86f3ff",
+            color: "#fff",
+            borderRadius: "12px",
+          }}
+          contentArrowStyle={{ borderRight: "7px solid #0a86f3ff" }}
           iconStyle={{ background: "#0a86f3ff", color: "#fff" }}
           position="right"
         >
-          <h3 className="vertical-timeline-element-title">Projects</h3>
-          <ul>
-            <li>
-              <li>
-                <strong>3-Tier AWS Architecture using Terraform</strong>
-                <ul>
-                  <li>
-                    Designed and deployed a scalable 3-tier AWS architecture
-                    using modular Terraform, provisioning VPC, public/private
-                    subnets, ALB, Auto Scaling Group, and RDS with secure
-                    networking and automated EC2 launch templates.
-                  </li>{" "}
-                  &nbsp;
-                  <li>
-                    Integrated CloudWatch monitoring using CW Agent, enabled
-                    bastion-based SSH access, resolved ALB Health check and
-                    IMDSv2 agent issues, and established secure MySQL RDS
-                    connectivity for dynamic and resilient infrastructure
-                    management.
-                  </li>
-                  &nbsp;
-                  <li className="font-weight-bold">
-                    Tech Stack: Terraform, AWS (VPC, EC2, RDS, ALB), CloudWatch,
-                    Auto Scaling
-                  </li>
+          <h3 className="vertical-timeline-element-title mb-3">Projects</h3>
+
+          <ul className="mb-3">
+            {projects.map((p) => (
+              <li key={p.title} className="mb-3">
+                <strong>{p.title}</strong>
+                <ul className="mt-1">
+                  {/* Show only first bullet by default, expand rest on click */}
+                  {(open ? p.bullets : p.bullets.slice(0, 1)).map((b, i) => (
+                    <li key={i}>{b}</li>
+                  ))}
                 </ul>
+                <div className="small fw-semibold mt-1">Tech: {p.tech}</div>
               </li>
-            </li>
+            ))}
           </ul>
-          <ul>
-            <li>
-              <li>
-                <strong>Resumaid</strong>
-                <ul>
-                  <li>
-                    Developed a MERN stack web application that allows users to
-                    generate professional resumes using customizable templates
-                    with PDF download support.
-                  </li>{" "}
-                  &nbsp;
-                  <li>
-                    Integrated CloudWatch monitoring using CW Agent, enabled
-                    bastion-based SSH access, resolved ALB Health check and
-                    IMDSv2 agent issues, and established secure MySQL RDS
-                    connectivity for dynamic and resilient infrastructure
-                    management.
-                  </li>
-                  &nbsp;
-                  <li>
-                    Integrated an ATS scoring system to evaluate resumes based
-                    on predefined rules and provide feedback for optimization.
-                  </li>{" "}
-                  &nbsp;
-                  <li>
-                    Implemented secure user authentication with login-based
-                    access to saved resume data and editable resume history.
-                  </li>{" "}
-                  &nbsp;
-                  <li>
-                    Added security features like encrypted data storage, rate
-                    limiting, IP-based blocking, and MFA via TOTP QR codes.
-                  </li>{" "}
-                  &nbsp;
-                  <li className="font-weight-bold">
-                    Tech Stack: MongoDB, Express.js, React.js, Node.js, Docker
-                  </li>
-                </ul>
-              </li>
-            </li>
-          </ul>
+
+          <div className="d-flex">
+            <button
+              type="button"
+              className="btn btn-sm btn-outline-light ms-auto"
+              onClick={() => setOpen((v) => !v)}
+            >
+              {open ? "Show less" : "Show more"}
+            </button>
+          </div>
         </VerticalTimelineElement>
 
         {/* Achievements */}

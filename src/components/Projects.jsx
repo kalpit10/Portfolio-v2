@@ -4,6 +4,7 @@ import { FaGithub, FaMedium, FaLinkedinIn } from "react-icons/fa";
 import resumaidLogo from "../images/logodiv1.jpeg";
 import ShreniEducation from "../images/Shreni.png";
 import ThreeTierArch from "../images/3-Tier-Web-Arch.png";
+import awsServerlessScraper from "../images/aws-serverless-scraper.png";
 import "../App.css";
 import Tilt from "react-parallax-tilt";
 
@@ -15,12 +16,12 @@ function Projects() {
       </h1>
 
       <div className="container py-5 px-3">
-        {/* 1 col on xs, 2 on md, 3 on lg+ */}
-        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-          {/* ==== Project: 3-Tier AWS Architecture (FIRST) ==== */}
+        {/* 1 col on xs, 2 on md and lg */}
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4 gy-5">
+          {/* 3-Tier AWS Architecture */}
           <div className="col d-flex">
             <Tilt
-              className="parallax-effect w-100"
+              className="parallax-effect w-100 h-100 py-5"
               tiltMaxAngleX={10}
               tiltMaxAngleY={10}
               perspective={1000}
@@ -52,12 +53,12 @@ function Projects() {
                     SSH. Documented costs, troubleshooting, and reusable IaC
                     patterns.
                   </p>
-                  <div className="mt-auto d-flex justify-content-center gap-4">
+                  <div className="mt-auto d-flex justify-content-center gap-4 pb-2">
                     <a
                       href="https://github.com/kalpit10/3-Tier-Web-Architecture-Terraform-"
                       target="_blank"
                       rel="noreferrer"
-                      aria-label="GitHub Repository"
+                      aria-label="GitHub"
                       className="icon-link fs-4 mx-2"
                     >
                       <FaGithub />
@@ -66,16 +67,16 @@ function Projects() {
                       href="https://medium.com/@kalpit.swami/i-built-a-scalable-high-availability-3-tier-aws-infrastructure-using-terraform-heres-what-i-4e75aaad704b"
                       target="_blank"
                       rel="noreferrer"
-                      aria-label="Medium Article"
+                      aria-label="Medium"
                       className="icon-link fs-4 px-3"
                     >
                       <FaMedium />
                     </a>
                     <a
-                      href="https://www.linkedin.com/posts/kalpitswami_aws-terraform-cloudcomputing-activity-7363007220260749312-hdzz?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQM8GwBGpWqq6pEKclRv9Mh5Rqmcxx7Qio"
+                      href="https://www.linkedin.com/posts/kalpitswami_aws-terraform-cloudcomputing-activity-7363007220260749312-hdzz"
                       target="_blank"
                       rel="noreferrer"
-                      aria-label="LinkedIn Profile"
+                      aria-label="LinkedIn"
                       className="icon-link fs-4"
                     >
                       <FaLinkedinIn />
@@ -86,10 +87,53 @@ function Projects() {
             </Tilt>
           </div>
 
-          {/* ==== Project: Resumaid ==== */}
+          {/* Serverless Scraper (SECOND) */}
           <div className="col d-flex">
             <Tilt
-              className="parallax-effect w-100"
+              className="parallax-effect w-100 h-100 py-5"
+              tiltMaxAngleX={10}
+              tiltMaxAngleY={10}
+              perspective={1000}
+              scale={1}
+            >
+              <div className="card project-card h-100 d-flex flex-column">
+                <img
+                  src={awsServerlessScraper}
+                  className="card-img-top project-img"
+                  alt="Serverless Data Scraping & Notification Pipeline on AWS"
+                />
+                <div className="card-body d-flex flex-column">
+                  <h5 className="card-title text-center">
+                    Serverless Data Scraping & Notification Pipeline on AWS
+                  </h5>
+                  <p className="card-text">
+                    Built a serverless pipeline using EventBridge, Lambda
+                    (Python), S3, SNS, and CloudWatch to automate daily web
+                    scraping and persist results as JSON. Designed IAM roles for
+                    least-privilege access, implemented BeautifulSoup-based
+                    parsers, and wired email alerts via SNS with end-to-end
+                    logging and monitoring in CloudWatch for traceability.
+                  </p>
+                  <div className="mt-auto d-flex justify-content-center gap-4 pb-2">
+                    <a
+                      href="https://github.com/kalpit10/aws-serverless-data-pipeline"
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label="GitHub"
+                      className="icon-link fs-4 mx-2"
+                    >
+                      <FaGithub />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </Tilt>
+          </div>
+
+          {/* Resumaid */}
+          <div className="col d-flex">
+            <Tilt
+              className="parallax-effect w-100 h-100 py-5"
               tiltMaxAngleX={10}
               tiltMaxAngleY={10}
               perspective={1000}
@@ -111,22 +155,21 @@ function Projects() {
                     practices, it balances usability with strong security to
                     support your job search.
                   </p>
-                  <div className="mt-auto d-flex justify-content-center">
+                  <div className="mt-auto d-flex justify-content-center gap-4 pb-2">
                     <a
                       href="https://github.com/kalpit10/Resumaid"
                       target="_blank"
                       rel="noreferrer"
-                      aria-label="GitHub Repository"
+                      aria-label="GitHub"
                       className="icon-link fs-4 mx-3"
                     >
                       <FaGithub />
                     </a>
-
                     <a
-                      href="https://www.linkedin.com/posts/kalpitswami_cybersecurity-owasp-vapt-activity-7315881583159255041-RBga?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQM8GwBGpWqq6pEKclRv9Mh5Rqmcxx7Qio"
+                      href="https://www.linkedin.com/posts/kalpitswami_cybersecurity-owasp-vapt-activity-7315881583159255041-RBga"
                       target="_blank"
                       rel="noreferrer"
-                      aria-label="LinkedIn Profile"
+                      aria-label="LinkedIn"
                       className="icon-link fs-4 mx-2"
                     >
                       <FaLinkedinIn />
@@ -137,10 +180,10 @@ function Projects() {
             </Tilt>
           </div>
 
-          {/* ==== Project: Shreni Education ==== */}
+          {/* Shreni Education */}
           <div className="col d-flex">
             <Tilt
-              className="parallax-effect w-100"
+              className="parallax-effect w-100 h-100 py-5"
               tiltMaxAngleX={10}
               tiltMaxAngleY={10}
               perspective={1000}
@@ -164,27 +207,25 @@ function Projects() {
                   </h5>
                   <p className="card-text">
                     Developed the WebApp as a freelance project using ReactJS,
-                    Tailwind CSS, and EmailJS. This dynamic web application
-                    provides detailed information about the coaching institute’s
-                    courses, faculty, and services, ensuring a seamless user
-                    experience and effective communication through integrated
-                    email functionalities.
+                    Tailwind CSS, and EmailJS. This dynamic web app details
+                    courses, faculty, and services, ensuring a smooth UX and
+                    reliable communication via email integrations.
                   </p>
-                  <div className="mt-auto d-flex justify-content-center">
+                  <div className="mt-auto d-flex justify-content-center gap-4 pb-2">
                     <a
                       href="https://github.com/kalpit10/Shreni-Education"
                       target="_blank"
                       rel="noreferrer"
-                      aria-label="GitHub Repository"
+                      aria-label="GitHub"
                       className="icon-link fs-4 mx-3"
                     >
                       <FaGithub />
                     </a>
                     <a
-                      href="https://www.linkedin.com/posts/kalpitswami_shreni-education-activity-7200806295833100289-Ds-P?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQM8GwBGpWqq6pEKclRv9Mh5Rqmcxx7Qio"
+                      href="https://www.linkedin.com/posts/kalpitswami_shreni-education-activity-7200806295833100289-Ds-P"
                       target="_blank"
                       rel="noreferrer"
-                      aria-label="LinkedIn Profile"
+                      aria-label="LinkedIn"
                       className="icon-link fs-4 mx-2"
                     >
                       <FaLinkedinIn />

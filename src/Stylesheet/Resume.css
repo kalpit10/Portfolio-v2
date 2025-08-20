@@ -8,13 +8,46 @@
 }
 
 .custom-list {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  .custom-list li::before {
-    content: "✔"; /* Checkmark icon or your preferred symbol */
-    color: #fff; /* Use your desired color */
-    font-size: 1.5em;
-    margin-right: 5px;
-  }
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.custom-list li::before {
+  content: "✔"; /* Checkmark icon or your preferred symbol */
+  color: #fff; /* Use your desired color */
+  font-size: 1.5em;
+  margin-right: 5px;
+}
+
+.proj-compact ul {
+  margin-bottom: 0;
+}
+.proj-compact li {
+  line-height: 1.4;
+}
+
+.proj-details.clamped {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 0.5rem;
+  position: relative;
+}
+.proj-details.clamped::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2.25rem;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 134, 243, 0) 0%,
+    rgba(10, 134, 243, 0.35) 60%,
+    rgba(10, 134, 243, 0.8) 100%
+  );
+}
+.proj-details.open {
+  max-height: none;
+}

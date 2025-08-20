@@ -66,3 +66,16 @@
 .card-body .d-flex.gap-4 {
   margin-top: auto;
 }
+
+.project-img {
+  width: 100%;
+  height: auto; /* keep natural height ratio */
+  max-height: 250px; /* optional limit */
+  object-fit: contain; /* shrink-to-fit, no zoom */
+  background-color: #f8f9fa; /* light bg behind letterboxing */
+}
+
+/* ensure vertical gap between rows even with Tilt */
+.row.g-4.gy-5 {
+  --bs-gutter-y: 3rem;
+} /* extra vertical space */
