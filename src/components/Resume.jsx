@@ -137,27 +137,6 @@ function Resume() {
           </div>
         </VerticalTimelineElement>
 
-        {/* Certifications Toast
-        <VerticalTimelineElement
-          className="vertical-timeline-element--certifications"
-          contentStyle={{ background: "#9b59b6", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  #9b59b6" }}
-          iconStyle={{ background: "#9b59b6", color: "#fff" }}
-          position="right"
-        >
-          <h3 className="vertical-timeline-element-title">Certifications</h3>
-          <ul>
-            <li>
-              <strong>Web Development Bootcamp </strong>
-              <p>- Dr. Angela Yu</p>
-            </li>
-            <li>
-              <strong>NodeJS Development Bootcamp</strong>
-              <p>- Zero To Mastery Academy</p>
-            </li>
-          </ul>
-        </VerticalTimelineElement> */}
-
         {/* Skills Toast */}
 
         <VerticalTimelineElement
@@ -186,7 +165,6 @@ function Resume() {
           </ul>
         </VerticalTimelineElement>
 
-        {/* Experience  */}
         <VerticalTimelineElement
           className="vertical-timeline-element--projects"
           contentStyle={{ background: "#27ae60", color: "#fff" }}
@@ -199,21 +177,27 @@ function Resume() {
           </h3>
           <ul>
             <li>
-              <li>
-                <strong>Shreni Education</strong>
-                <ul>
-                  <li>
-                    Developed Shreni Education’s website, providing
-                    comprehensive information about courses, faculty, and
-                    services, ensuring a user-friendly experience and integrated
-                    communication.
-                  </li>{" "}
-                  &nbsp;
-                  <li className="font-weight-bold">
-                    Tech Stack: React JS, Tailwind, EmailJS
-                  </li>
-                </ul>
-              </li>
+              <strong>
+                <a
+                  href="https://shreni-education.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "#fff", textDecoration: "underline" }}
+                >
+                  Shreni Education
+                </a>
+              </strong>
+              <ul>
+                <li>
+                  Developed Shreni Education’s website, providing comprehensive
+                  information about courses, faculty, and services, ensuring a
+                  user-friendly experience and integrated communication.
+                </li>
+                &nbsp;
+                <li className="font-weight-bold">
+                  Tech Stack: React JS, Tailwind, EmailJS
+                </li>
+              </ul>
             </li>
           </ul>
         </VerticalTimelineElement>
@@ -265,17 +249,45 @@ function Resume() {
           iconStyle={{ background: "#f39c12", color: "#fff" }}
           position="left"
         >
-          <h3 className="vertical-timeline-element-title">Achievements</h3>
+          <h3 className="vertical-timeline-element-title">
+            Awards & Achievements
+          </h3>
           <ul>
-            <li>President’s Honor List, Class of 2024.</li> &nbsp;
             <li>
-              Core Member – National Service Scheme (NSS), a student-led
+              <a
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7369781102091235330/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "#fff", textDecoration: "underline" }}
+              >
+                <b>AWS JAM WINNER </b>(Team Competition), AWS SUMMIT 2025
+              </a>
+            </li>
+            &nbsp;
+            <li>
+              <a
+                href="https://www.linkedin.com/posts/kalpitswami_presidentshonourlist-senecapolytechnic-cybersecurity-activity-7275331443554242560-D6-K?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQM8GwBGpWqq6pEKclRv9Mh5Rqmcxx7Qio"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "#fff", textDecoration: "underline" }}
+              >
+                <b>President’s Honor List</b>, Class of 2024-25
+              </a>
+            </li>
+            &nbsp;
+            <li>
+              <b>Core Member</b> – National Service Scheme (NSS), a student-led
               community service and leadership program at JIMS, Vasant Kunj, New
               Delhi.
+            </li>
+            &nbsp;
+            <li>
+              <b>Core Member</b> – IT Club (ENIGMA) of JIMS, Vasant Kunj
             </li>{" "}
             &nbsp;
-            <li>Core Member – IT Club (ENIGMA) of JIMS, Vasant Kunj</li> &nbsp;
-            <li>Silver Medalist in Badminton in CBSE Inter-Zonal Tournament</li>
+            <li>
+              <b>Silver Medalist</b> in Badminton in CBSE Inter-Zonal Tournament
+            </li>
           </ul>
         </VerticalTimelineElement>
       </VerticalTimeline>
