@@ -36,21 +36,27 @@ function Projects() {
                 <div className="card-body d-flex flex-column">
                   <h5 className="card-title text-center">
                     <a
-                      href="https://medium.com/@kalpit.swami/i-built-a-scalable-high-availability-3-tier-aws-infrastructure-using-terraform-heres-what-i-4e75aaad704b"
+                      href="https://medium.com/@kalpit.swami/how-i-transformed-a-simple-3-tier-aws-project-into-a-secure-automated-setup-d9a07dddf27c"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      3-Tier AWS Architecture (Terraform)
+                      Production-Ready 3-Tier AWS Infrastructure with Terraform
+                      & GitHub Actions
                     </a>
                   </h5>
                   <p className="card-text">
-                    Built a modular, high-availability 3-tier AWS stack with
-                    Terraform: VPC, public/private subnets, ALB, Auto Scaling
-                    EC2, and RDS MySQL. Implemented least-privilege security
-                    groups, enforced IMDSv2, and deployed dual NAT gateways.
-                    Instrumented EC2 with CloudWatch Agent and dashboards.
-                    Deployed a PHP demo app with health checks and bastion-based
-                    SSH. Documented costs, troubleshooting, and reusable IaC
+                    Designed and deployed a modular, high-availability 3-tier
+                    AWS infrastructure using Terraform. Provisioned VPC,
+                    public/private subnets, ALB, Auto Scaling EC2, and RDS MySQL
+                    with secure networking. Strengthened security by enforcing
+                    least-privilege groups, IAM roles, IMDSv2, and Secrets
+                    Manager for credential management. Enhanced reliability with
+                    custom ALB health checks, dual NAT gateways, and multi-AZ
+                    scaling. Integrated CloudWatch Agent, logs, and dashboards
+                    for monitoring and troubleshooting. Automated deployments
+                    via a GitHub Actions CI/CD pipeline with OIDC authentication
+                    and remote state (S3 + DynamoDB). Delivered a PHP demo app
+                    with bastion-hosted SSH, cost tracking, and reusable IaC
                     patterns.
                   </p>
                   <div className="mt-auto d-flex justify-content-center gap-4 pb-2">

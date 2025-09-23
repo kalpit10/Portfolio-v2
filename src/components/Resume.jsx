@@ -24,13 +24,15 @@ function Resume() {
 
   const projects = [
     {
-      title: "3-Tier AWS Architecture using Terraform",
+      title:
+        "Production-Ready 3-Tier AWS Infrastructure with Terraform & GitHub Actions",
       bullets: [
-        "Deployed 3-tier VPC, ALB, ASG (EC2), and RDS with modular Terraform and least-privilege SGs.",
-        "CloudWatch Agent on EC2, bastion SSH, IMDSv2, dual NAT; costs and ops documented.",
-        "Launch templates, ALB health checks resolved; reusable IaC patterns.",
+        "Cut deployment time by 90-95% by automating end-to-end 3-tier AWS stack (VPC, ALB, ASG, RDS, IAM, Bastion) with modular Terraform.",
+        "Streamlined operations via remote Terraform backend, state locking (S3 + DynamoDB) and GitHub Actions CI/CD with OIDC.",
+        "Secured workloads using AWS Secrets Manager, IAM least-privilege roles, and Bastion host-based access.",
+        "Ensured high availability with Auto Scaling, ALB health checks, and CloudWatch.",
       ],
-      tech: "Terraform, AWS (VPC, EC2, RDS, ALB), CloudWatch, Auto Scaling",
+      tech: "Terraform · AWS (VPC, EC2, RDS MySQL, ALB, Auto Scaling) · Secrets Manager · CloudWatch (Agent, Logs, Dashboards) · GitHub Actions (CI/CD)",
     },
     {
       title: "Serverless Data Scraping & Notification Pipeline (AWS)",
@@ -69,7 +71,7 @@ function Resume() {
         type="button"
         className="btn btn-outline-primary m-3"
       >
-        Back
+        ← Back to Home
       </button>
 
       <button
@@ -77,11 +79,11 @@ function Resume() {
         type="button"
         className="btn btn-outline-primary m-4"
       >
-        Download CV
+        👉 Get My Resume
       </button>
       <h1 className="h1-resume">Kalpit Swami</h1>
       <p className="header-para">
-        Email: kalpit.swami@gmail.com || Location: Toronto, Canada
+        Email: kalpit.swami@gmail.com | Location: Toronto, Canada
       </p>
 
       <VerticalTimeline>
@@ -112,6 +114,7 @@ function Resume() {
             <p className="text-muted mb-0">
               Seneca College of Applied Science & Engineering Technology
             </p>
+            <p className="mb-0 text-success">GPA: 4.0 / 4.0 (Semester-1)</p>
           </div>
 
           <hr className="border-secondary" />
@@ -157,6 +160,7 @@ function Resume() {
             <li>Docker</li>
             <li>Linux</li>
             <li>Git</li>
+            <li>GitHub Actions</li>
             <li>Bash</li>
             <li>MongoDB</li>
             <li>JavaScript</li>

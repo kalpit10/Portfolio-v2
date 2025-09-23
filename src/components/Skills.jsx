@@ -1,8 +1,14 @@
 import React from "react";
 import { IoLogoJavascript } from "react-icons/io";
 import { IoLogoReact } from "react-icons/io5";
-import { FaNode, FaGit, FaDocker, FaLinux, FaAws } from "react-icons/fa";
-import { SiMongodb, SiGnubash, SiTerraform } from "react-icons/si";
+import { FaNode, FaDocker, FaLinux, FaAws } from "react-icons/fa";
+import {
+  SiMongodb,
+  SiGnubash,
+  SiTerraform,
+  SiGithubactions,
+} from "react-icons/si";
+import { TbBrandGithub } from "react-icons/tb";
 // import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../Stylesheet/Skills.css";
@@ -30,8 +36,12 @@ function Skills() {
           <h5 className="mx-auto font-weight-light p-2">Linux</h5>
         </div>
         <div className="col-xs-4 col-md-2 tech-icons">
-          <FaGit />
-          <h5 className="mx-auto font-weight-light p-2">Git</h5>
+          <TbBrandGithub />
+          <h5 className="mx-auto font-weight-light p-2">Git & GitHub</h5>
+        </div>
+        <div className="col-xs-4 col-md-2 tech-icons">
+          <SiGithubactions />
+          <h5 className="mx-auto font-weight-light p-2">GitHub Actions</h5>
         </div>
         <div className="col-xs-4 col-md-2 tech-icons">
           <SiGnubash />
