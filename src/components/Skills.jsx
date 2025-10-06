@@ -7,6 +7,7 @@ import {
   SiGnubash,
   SiTerraform,
   SiGithubactions,
+  SiKubernetes,
 } from "react-icons/si";
 import { TbBrandGithub } from "react-icons/tb";
 // import { toast } from "react-toastify";
@@ -24,6 +25,14 @@ function Skills() {
           <h5 className="mx-auto font-weight-light p-2">Amazon Web Services</h5>
         </div>
         <div className="col-xs-4 col-md-2 tech-icons">
+          <FaLinux />
+          <h5 className="mx-auto font-weight-light p-2">Linux</h5>
+        </div>
+        <div className="col-xs-4 col-md-2 tech-icons">
+          <SiGnubash />
+          <h5 className="mx-auto font-weight-light p-2">Bash</h5>
+        </div>
+        <div className="col-xs-4 col-md-2 tech-icons">
           <SiTerraform />
           <h5 className="mx-auto font-weight-light p-2">Terraform</h5>
         </div>
@@ -32,8 +41,8 @@ function Skills() {
           <h5 className="mx-auto font-weight-light p-2">Docker</h5>
         </div>
         <div className="col-xs-4 col-md-2 tech-icons">
-          <FaLinux />
-          <h5 className="mx-auto font-weight-light p-2">Linux</h5>
+          <SiKubernetes />
+          <h5 className="mx-auto font-weight-light p-2">Kubernetes</h5>
         </div>
         <div className="col-xs-4 col-md-2 tech-icons">
           <TbBrandGithub />
@@ -41,12 +50,11 @@ function Skills() {
         </div>
         <div className="col-xs-4 col-md-2 tech-icons">
           <SiGithubactions />
-          <h5 className="mx-auto font-weight-light p-2">GitHub Actions</h5>
+          <h5 className="mx-auto font-weight-light p-2">
+            CI/CD (GitHub Actions)
+          </h5>
         </div>
-        <div className="col-xs-4 col-md-2 tech-icons">
-          <SiGnubash />
-          <h5 className="mx-auto font-weight-light p-2">Bash</h5>
-        </div>
+
         <div className="col-xs-4 col-md-2 tech-icons">
           <IoLogoJavascript />
           <h5 className="mx-auto font-weight-light p-2">JavaScript</h5>

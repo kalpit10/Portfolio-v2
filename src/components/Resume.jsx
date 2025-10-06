@@ -111,9 +111,7 @@ function Resume() {
             <h5 className="fw-bold mb-1">
               Cloud Architecture & Administration
             </h5>
-            <p className="text-muted mb-0">
-              Seneca College of Applied Science & Engineering Technology
-            </p>
+            <p className="text-muted mb-0">Seneca Polytechnic</p>
             <p className="mb-0 text-success">GPA: 4.0 / 4.0 (Semester-1)</p>
           </div>
 
@@ -122,9 +120,7 @@ function Resume() {
           {/* Cybersecurity */}
           <div className="mb-4">
             <h5 className="fw-bold mb-1">Cybersecurity & Threat Management</h5>
-            <p className="text-muted mb-1">
-              Seneca College of Applied Science & Engineering Technology
-            </p>
+            <p className="text-muted mb-1">Seneca Polytechnic</p>
             <p className="mb-0 text-success">GPA: 4.0 / 4.0 (High Honors)</p>
           </div>
 
@@ -136,6 +132,7 @@ function Resume() {
             <p className="text-muted mb-1">
               Jagannath International Management School, New Delhi
             </p>
+            <p>Affiliated to IP University, New Delhi</p>
             <p className="mb-0 text-success">GPA: 9.28 / 10.0</p>
           </div>
         </VerticalTimelineElement>
@@ -156,12 +153,13 @@ function Resume() {
           <h3 className="vertical-timeline-element-title">Skills</h3>
           <ul className="custom-list">
             <li>AWS Services</li>
+            <li>Linux</li>
+            <li>Bash</li>
             <li>Terraform</li>
             <li>Docker</li>
-            <li>Linux</li>
+            <li>Kubernetes</li>
             <li>Git</li>
-            <li>GitHub Actions</li>
-            <li>Bash</li>
+            <li>CI/CD (GitHub Actions)</li>
             <li>MongoDB</li>
             <li>JavaScript</li>
             <li>React.js</li>
