@@ -9,9 +9,9 @@ function Typewriter() {
         options={{
           strings: [
             "Cloud • Security • Automation",
+            "Docker • Kubernetes • Linux • Bash",
             "Designing Resilient AWS Architectures",
             "Cloud Engineering | Security by Design",
-            "Docker • Git • Linux • Bash",
           ],
           delay: 70,
           autoStart: true,

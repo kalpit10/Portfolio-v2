@@ -24,6 +24,15 @@ function Resume() {
 
   const projects = [
     {
+      title: "Capstone: Cloud-Native E-Commerce Deployment on AWS",
+      bullets: [
+        "Deploying a production-grade E-commerce platform on AWS with strong technical expertise in Terraform, EKS, and CI/CD (GitHub Actions), implementing full networking, automation, and security, to meet technical specifications.",
+        "Containerized multi-service app on AWS using Amazon ECR and EKS with ALB Ingress routing, ensuring high availability and leveraging microservices architecture concepts.",
+        "Added Kubernetes HPA for dynamic scaling and CloudWatch Dashboards for centralized observability supporting capacity planning and performance tuning.",
+      ],
+      tech: "Terraform · AWS (VPC, EKS, ECR, ALB, IAM, Secrets Manager) · Kubernetes (Helm, Ingress, Network Policies) · Docker · GitHub Actions (CI/CD)",
+    },
+    {
       title:
         "Production-Ready 3-Tier AWS Infrastructure with Terraform & GitHub Actions",
       bullets: [
@@ -42,15 +51,6 @@ function Resume() {
         "Traceable runs with structured logging and metrics.",
       ],
       tech: "Lambda (Python), EventBridge, S3, SNS, CloudWatch, IAM",
-    },
-    {
-      title: "Resumaid",
-      bullets: [
-        "MERN app for resume creation with templates, PDF export, and ATS checks.",
-        "Secure auth, rate limiting, encrypted storage, MFA (TOTP).",
-        "Editable history and profile management.",
-      ],
-      tech: "MongoDB, Express, React, Node, Docker",
     },
   ];
 
