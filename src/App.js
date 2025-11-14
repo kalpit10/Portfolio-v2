@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Me from "./components/Me";
 import Projects from "./components/Projects";
+import Awards from "./components/Awards";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -51,6 +52,7 @@ function App(props) {
                 <Me />
                 <Skills />
                 <Projects />
+                <Awards />
                 <ContactForm />
                 <Footer />
               </div>
