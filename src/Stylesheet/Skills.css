@@ -17,12 +17,10 @@
   color: #f8fafc;
 }
 
-
 .skills-subtitle {
   max-width: 720px;
   color: rgba(226, 232, 240, 0.9);
 }
-
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));

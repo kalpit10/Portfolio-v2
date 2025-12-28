@@ -79,9 +79,9 @@ function Skills() {
     <section className="skills-section py-5 header app">
       <div className="container">
         <div className="text-center mb-5">
-          <h1 className="skills-heading mb-3">TECH STACK</h1>
+          <h1 className="fw-bold dark-project-h1">TECH STACK</h1>
           <p className="skills-subtitle lead mx-auto">
-            Every layer of the stack is covered—from provisioning resilient
+            Every layer of the stack is coveredƒ?"from provisioning resilient
             infrastructure to crafting rich user interfaces and maintaining the
             CI/CD glue between them.
           </p>

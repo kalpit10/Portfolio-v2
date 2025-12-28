@@ -5,31 +5,194 @@
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg");
 }
 
-.me-h2 {
-  color: #fff;
-  font-weight:lighter;
+.about-section {
+  color: #f7f9fc;
+  padding: 4rem 0 2rem;
+  overflow: hidden;
 }
 
-.vertical-line {
-  width: 4px;
-  background-color: #0af9d1;
+.about-container {
+  position: relative;
+  isolation: isolate;
 }
 
-
-.typing-container {
-  white-space: pre-line;
-  font-family: "Poppins", sans-serif;
-  color: #fff;
+.about-container::before,
+.about-container::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.5;
+  z-index: 0;
 }
 
-.card {
-  background-color: #1f2029;
-  color: #fff;
+.about-container::before {
+  width: 320px;
+  height: 320px;
+  background: rgba(111, 124, 255, 0.7);
+  top: -80px;
+  left: -120px;
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  .vertical-line {
-    display: none;
+.about-container::after {
+  width: 280px;
+  height: 280px;
+  background: rgba(0, 224, 184, 0.7);
+  bottom: -100px;
+  right: -120px;
+}
+
+.about-card {
+  border-radius: 24px;
+  padding: 2rem;
+  background: radial-gradient(circle at 20% 20%, rgba(111, 124, 255, 0.16), transparent 42%),
+    radial-gradient(circle at 80% 20%, rgba(0, 224, 184, 0.16), transparent 48%),
+    rgba(10, 12, 24, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 30px 60px rgba(6, 7, 18, 0.7);
+  backdrop-filter: blur(10px);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-shell {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(280px, 0.5fr) minmax(420px, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.about-title {
+  margin: 0;
+  font-size: 2.4rem;
+  letter-spacing: 0.05rem;
+  color: #ffffff;
+}
+
+.about-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.portrait-wrap {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 22px;
+  background: linear-gradient(140deg, rgba(111, 124, 255, 0.18), rgba(0, 224, 184, 0.24));
+  padding: 10px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
+}
+
+.portrait-glow {
+  position: absolute;
+  inset: 0;
+  border-radius: 22px;
+  background: radial-gradient(circle at 30% 30%, rgba(0, 224, 184, 0.32), transparent 60%),
+    radial-gradient(circle at 70% 70%, rgba(111, 124, 255, 0.28), transparent 55%);
+  filter: blur(18px);
+}
+
+.portrait-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(6, 8, 18, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: grid;
+  place-items: center;
+}
+
+.portrait-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.typewriter-block {
+  min-height: 0;
+  line-height: 1.8;
+  font-size: 1.08rem;
+  color: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.2rem 1.4rem;
+  max-width: 700px;
+}
+
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.about-tags span {
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.1);
+  color: #f7f9fc;
+  font-size: 0.85rem;
+  letter-spacing: 0.03rem;
+}
+
+.typewriter-block {
+  min-height: 0;
+  line-height: 1.8;
+  font-size: 1.08rem;
+  color: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.2rem 1.4rem;
+  max-width: 640px;
+}
+
+@media (max-width: 992px) {
+  .about-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .portrait-wrap {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-section {
+    padding: 3rem 0 1.5rem;
+  }
+
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-card {
+    padding: 1.5rem;
+  }
+
+  .typewriter-block {
+    font-size: 1.02rem;
+    line-height: 1.7;
   }
 }

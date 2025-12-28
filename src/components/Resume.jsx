@@ -41,7 +41,7 @@ const timeline = [
     period: "2020 - 2023",
     title: "Bachelor of Computer Applications",
     subtitle: "JIMS, Vasant Kunj (GGSIPU - New Delhi)",
-    highlight: "Graduated with 9.28 / 10 GPA",
+    highlight: "Graduated with 3.8 / 4.0 GPA",
     bullets: [
       "Focused on software engineering fundamentals while contributing to NSS and IT club initiatives.",
       "Led academic projects that sparked a deeper dive into cloud and security engineering.",
@@ -134,7 +134,9 @@ function Resume() {
             <ul className="hero-meta">
               <li>
                 <span>Email</span>
-                <a href="mailto:kalpit.swami@gmail.com">kalpit.swami@gmail.com</a>
+                <a href="mailto:kalpit.swami@gmail.com">
+                  kalpit.swami@gmail.com
+                </a>
               </li>
               <li>
                 <span>Location</span>
@@ -156,7 +158,7 @@ function Resume() {
           <div className="hero-pillars">
             <div>
               <strong>4.0 GPA</strong>
-              <span>2x President's Honour List</span>
+              <span>4x President's Honour List</span>
             </div>
             <div>
               <strong>AWS Summit</strong>

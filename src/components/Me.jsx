@@ -4,54 +4,46 @@ import "../Stylesheet/Me.css";
 import "../App.css";
 import MyPhoto from "../images/Me.png";
 
-// Me.jsx
 function Me(props) {
   return (
-    <div className={`header app d-flex align-items-center container`}>
-      {/* All elements in one row */}
-      <div className="row justify-content-center">
-        {/* Left side with h2 and img */}
-        <div className="col-12 col-md-4 text-center">
-          <h1 className="me-h2 py-5">ABOUT ME</h1>
-          <img
-            src={MyPhoto}
-            className="img-fluid rounded-circle mb-3"
-            style={{ maxWidth: "150px" }}
-            alt="Kalpit Swami"
-          />
-        </div>
+    <section className="about-section header app" id="about">
+      <div className="container about-container">
+        <div className="about-card about-shell">
+          <div className="about-visual">
+            <div className="portrait-wrap">
+              <div className="portrait-glow" aria-hidden="true"></div>
+              <div className="portrait-frame">
+                <img src={MyPhoto} alt="Kalpit Swami" />
+              </div>
+            </div>
+          </div>
 
-        {/* Vertical line */}
-        <div
-          className="vertical-line mb-3 mt-auto "
-          style={{ height: "15rem" }}
-        ></div>
-
-        {/* Right side with text */}
-        <div className="col-12 col-md-6 ml-md-3 mt-auto mb-5">
-          <div className="card bg-transparent border-0">
-            <Typewriter
-              onInit={(typewriter) => {
-                typewriter
-                  .typeString(
-                    "I am a Cloud/DevOps engineer in training with a foundation in cybersecurity and a passion for building secure, scalable systems. "
-                  )
-                  .typeString(
-                    "Currently pursuing a postgraduate program in Cloud Architecture, I focus on the intersection of infrastructure, automation, and security. "
-                  )
-                  .typeString(
-                    "I enjoy designing reliable cloud environments, streamlining deployments with Infrastructure as Code, and applying a security-first mindset to every project."
-                  )
-                  .start();
-              }}
-              options={{
-                delay: 10,
-              }}
-            />
+          <div className="about-content">
+            <h1 className="about-title">ABOUT ME</h1>
+            <div className="typewriter-block">
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString(
+                      "I am a Cloud and DevOps professional with a 4.0 GPA and a 4x President's Honor List distinction. "
+                    )
+                    .typeString(
+                      "I specialize in architecting automated, production-grade environments with Terraform and GitHub Actions, having engineered platforms that maintained 99.9% uptime during rigorous stress testing. "
+                    )
+                    .typeString(
+                      "I have also won competitions like AWS JAM, which sharpened my ability to solve complex infrastructure challenges and deliver resilient, high-performance cloud solutions that drive operational excellence."
+                    )
+                    .start();
+                }}
+                options={{
+                  delay: 10,
+                }}
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
