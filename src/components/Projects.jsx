@@ -46,6 +46,16 @@ const featuredProjects = [
         label: "GitHub-WebApp",
         icon: <FaGithub />,
       },
+      {
+        href: "https://medium.com/@kalpit.swami/deploying-a-production-ready-e-commerce-platform-on-aws-eks-our-end-to-end-cloud-devops-journey-1fda5881e03d",
+        label: "Medium",
+        icon: <FaMedium />,
+      },
+      {
+        href: "https://www.linkedin.com/posts/kalpitswami_cloudarchitecture-devops-aws-activity-7400590798880296960-PN6O?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQM8GwBGpWqq6pEKclRv9Mh5Rqmcxx7Qio",
+        label: "LinkedIn",
+        icon: <FaLinkedinIn />,
+      },
     ],
     cover: CapstoneProject,
   },
@@ -74,7 +84,7 @@ const featuredProjects = [
         icon: <FaMedium />,
       },
       {
-        href: "https://www.linkedin.com/posts/kalpitswami_aws-terraform-cloudcomputing-activity-7363007220260749312-hdzz",
+        href: "https://www.linkedin.com/posts/kalpitswami_a-month-ago-i-shared-my-first-big-project-activity-7375714649524076544-oVme?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQM8GwBGpWqq6pEKclRv9Mh5Rqmcxx7Qio",
         label: "LinkedIn",
         icon: <FaLinkedinIn />,
       },
@@ -84,53 +94,6 @@ const featuredProjects = [
 ];
 
 const otherProjects = [
-  {
-    id: "serverless-data",
-    title: "Serverless Data Scraping & Notification Pipeline on AWS",
-    badge: "Automation",
-    subtitle: "EventBridge | Lambda | S3 | SNS | CloudWatch",
-    description:
-      "Built a serverless pipeline using EventBridge, Lambda (Python), S3, SNS, and CloudWatch to automate daily web scraping and persist results as JSON. Designed IAM least-privilege roles, BeautifulSoup parsers, and SNS email alerts with end-to-end logging for traceability.",
-    highlights: [
-      "EventBridge schedules scraping jobs with Lambda powering BeautifulSoup crawlers",
-      "S3 snapshots, SNS alerts, and CloudWatch telemetry ensure auditability",
-    ],
-    stack: ["AWS Lambda", "EventBridge", "SNS", "S3", "Python", "CloudWatch"],
-    links: [
-      {
-        href: "https://github.com/kalpit10/aws-serverless-data-pipeline",
-        label: "GitHub",
-        icon: <FaGithub />,
-      },
-    ],
-    cover: awsServerlessScraper,
-  },
-  {
-    id: "resumaid",
-    title: "Resumaid · Secure Resume Builder & ATS Insights",
-    badge: "SaaS",
-    subtitle: "OWASP Guardrails · MFA · ATS Insights",
-    description:
-      "Designed a modern resume builder that pairs polished templates with ATS checks while keeping applicant data encrypted, MFA-protected, and shielded with rate limiting + secure headers.",
-    highlights: [
-      "Security-first UX informed by OWASP ASVS and custom VAPT findings",
-      "Live LinkedIn storytelling around cyber hygiene for job seekers",
-    ],
-    stack: ["React", "Node.js", "MongoDB", "OWASP", "MFA"],
-    links: [
-      {
-        href: "https://github.com/kalpit10/Resumaid",
-        label: "GitHub",
-        icon: <FaGithub />,
-      },
-      {
-        href: "https://www.linkedin.com/posts/kalpitswami_cybersecurity-owasp-vapt-activity-7315881583159255041-RBga",
-        label: "LinkedIn",
-        icon: <FaLinkedinIn />,
-      },
-    ],
-    cover: resumaidLogo,
-  },
   {
     id: "shreni-education",
     title: "Shreni Education · Learning Hub",
@@ -161,6 +124,53 @@ const otherProjects = [
       },
     ],
     cover: ShreniEducation,
+  },
+  {
+    id: "serverless-data",
+    title: "Serverless Data Scraping & Notification Pipeline on AWS",
+    badge: "Automation",
+    subtitle: "EventBridge | Lambda | S3 | SNS | CloudWatch",
+    description:
+      "Built a serverless pipeline using EventBridge, Lambda (Python), S3, SNS, and CloudWatch to automate daily web scraping and persist results as JSON. Designed IAM least-privilege roles, BeautifulSoup parsers, and SNS email alerts with end-to-end logging for traceability.",
+    highlights: [
+      "EventBridge schedules scraping jobs with Lambda powering BeautifulSoup crawlers",
+      "S3 snapshots, SNS alerts, and CloudWatch telemetry ensure auditability",
+    ],
+    stack: ["AWS Lambda", "EventBridge", "SNS", "S3", "Python", "CloudWatch"],
+    links: [
+      {
+        href: "https://github.com/kalpit10/aws-serverless-data-pipeline",
+        label: "GitHub",
+        icon: <FaGithub />,
+      },
+    ],
+    cover: awsServerlessScraper,
+  },
+  {
+    id: "resumaid",
+    title: "Resumaid · Secure Resume Builder & ATS Insights · OWASP-Aligned",
+    badge: "Capstone · Cybersecurity",
+    subtitle: "OWASP Guardrails · MFA · ATS Insights",
+    description:
+      "Designed a modern resume builder that pairs polished templates with ATS checks while keeping applicant data encrypted, MFA-protected, and shielded with rate limiting + secure headers.",
+    highlights: [
+      "Security-first UX informed by OWASP ASVS and custom VAPT findings",
+      "Live LinkedIn storytelling around cyber hygiene for job seekers",
+    ],
+    stack: ["React", "Node.js", "MongoDB", "OWASP", "MFA"],
+    links: [
+      {
+        href: "https://github.com/kalpit10/Resumaid",
+        label: "GitHub",
+        icon: <FaGithub />,
+      },
+      {
+        href: "https://www.linkedin.com/posts/kalpitswami_cybersecurity-owasp-vapt-activity-7315881583159255041-RBga?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQM8GwBGpWqq6pEKclRv9Mh5Rqmcxx7Qio",
+        label: "LinkedIn",
+        icon: <FaLinkedinIn />,
+      },
+    ],
+    cover: resumaidLogo,
   },
 ];
 

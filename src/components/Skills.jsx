@@ -81,7 +81,7 @@ function Skills() {
         <div className="text-center mb-5">
           <h1 className="fw-bold dark-project-h1">TECH STACK</h1>
           <p className="skills-subtitle lead mx-auto">
-            Every layer of the stack is coveredƒ?"from provisioning resilient
+            Every layer of the stack is covered from provisioning resilient
             infrastructure to crafting rich user interfaces and maintaining the
             CI/CD glue between them.
           </p>
