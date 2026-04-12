@@ -1,50 +1,43 @@
-# Name of this Github Action workflow
 name: Deploy React portfolio to S3
 
 on:
   push:
     branches:
-      - main # Triggers when code is pushed to the main branch
+      - main
+
+permissions:
+  id-token: write # Required for OIDC
+  contents: read # Required for checkout
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      # Step 1: Checkout Github repo's code into the runner
       - name: Checkout repo code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      # Step 2: Setup Node.js environment (needed for building React app)
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: "22"
 
-      # Step 3: Install project dependencies using npm
       - name: Install dependencies
-        run: npm ci # 'ci' is faster and more consistent than 'install' for CI/CD
+        run: npm ci
 
-      # Step 4: Create a temporary .env file with EmailJS secrets
       - name: Create .env file
         run: |
           echo "REACT_APP_EMAILJS_SERVICE_ID=${{ secrets.REACT_APP_EMAILJS_SERVICE_ID }}" >> .env
           echo "REACT_APP_EMAILJS_TEMPLATE_ID=${{ secrets.REACT_APP_EMAILJS_TEMPLATE_ID }}" >> .env
           echo "REACT_APP_EMAILJS_PUBLIC_KEY=${{ secrets.REACT_APP_EMAILJS_PUBLIC_KEY }}" >> .env
 
-      # Step 5: Build the production version of the React app
       - name: Build the React app
-        run: npm run build # Builds the app into the 'build' directory
+        run: npm run build
 
-      # Step 6: Upload the build folder to the S3 bucket
-      - name: Deploy to S3
-        uses: jakejarvis/s3-sync-action@master # A ready-to-use GitHub Action for syncing files to S3
+      - name: Configure AWS credentials via OIDC
+        uses: aws-actions/configure-aws-credentials@v4
         with:
-          args: --delete # Remove any extra files from S3 that no longer exist locally
-        env:
-          AWS_S3_BUCKET: kalpitswami-portfolio
-          AWS_REGION: us-east-1
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          SOURCE_DIR: build # This is the folder created by `npm run build`
+          role-to-assume: arn:aws:iam::395136123952:role/github-actions-portfolio-s3-deploy
+          aws-region: us-east-1
 
+      - name: Deploy to S3
+        run: aws s3 sync build/ s3://kalpitswami-portfolio --delete

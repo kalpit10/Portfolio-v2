@@ -6,6 +6,7 @@ import { IoLogoJavascript } from "react-icons/io";
 import { IoLogoReact } from "react-icons/io5";
 import { FaNode, FaDocker, FaLinux, FaAws } from "react-icons/fa";
 import {
+  SiAnsible,
   SiMongodb,
   SiGnubash,
   SiTerraform,
@@ -31,6 +32,7 @@ const skillCategories = [
     accent: "accent-automation",
     skills: [
       { icon: <SiTerraform />, label: "Terraform" },
+      { icon: <SiAnsible />, label: "Ansible" },
       { icon: <SiGithubactions />, label: "GitHub Actions" },
     ],
   },

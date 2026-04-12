@@ -25,18 +25,24 @@ function Me(props) {
                 onInit={(typewriter) => {
                   typewriter
                     .typeString(
-                      "I am a Cloud and DevOps professional with a 4.0 GPA and a 4x President's Honor List distinction. "
+                      "I'm a Cloud & DevOps Engineer who builds infrastructure that ships - not just in labs, but in production. "
                     )
                     .typeString(
-                      "I specialize in architecting automated, production-grade environments with Terraform and GitHub Actions, having engineered platforms that maintained 99.9% uptime during rigorous stress testing. "
+                      "During my time at the Ontario Ministry of Public & Business Service Delivery, I automated provisioning across 21 sites using Ansible and engineered a phased Citrix migration with PowerShell. "
                     )
                     .typeString(
-                      "I have also won competitions like AWS JAM, which sharpened my ability to solve complex infrastructure challenges and deliver resilient, high-performance cloud solutions that drive operational excellence."
+                      "On my own, I've architected multi-environment AWS platforms on EKS with Terraform, GitHub Actions CI/CD, and security-first design from VPC isolation to secrets injection. "
+                    )
+                    .typeString(
+                      "I hold postgraduate certifications in Cloud Architecture and Cybersecurity with a 4.0 GPA, earned the President's Honour List four times, and won the AWS JAM competition solving real infrastructure challenges under time pressure. "
+                    )
+                    .typeString(
+                      "I don't list tools I haven't used in production or projects. If it's on my site, I've built with it."
                     )
                     .start();
                 }}
                 options={{
-                  delay: 10,
+                  delay: 8,
                 }}
               />
             </div>

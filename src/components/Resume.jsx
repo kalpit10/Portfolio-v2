@@ -8,6 +8,19 @@ import Footer from "./Footer";
 
 const timeline = [
   {
+    period: "2026 Jan - Apr",
+    title: "Information Technology Analyst (Co-op)",
+    subtitle:
+      "Ministry of Public & Business Service Delivery & Procurement | GovTechON - North York, Ontario",
+    bullets: [
+      "Developed and deployed Infrastructure-as-Code (IaC) using Ansible to automate OS provisioning and server configuration across 21 sites.",
+      "Engineered Python and PowerShell automation scripts to streamline infrastructure operations, including a phased Citrix VDA migration.",
+      "Designed and deployed interactive monitoring dashboards using Power BI to improve system observability and support data-driven operational reporting for stakeholders.",
+      "Configured automated alerting workflows using Power Automate to enable proactive incident detection and faster response times, driving operational excellence.",
+      "Enforced security and compliance standards across a government cloud environment by managing 100+ infrastructure Change Requests, ensuring system reliability.",
+    ],
+  },
+  {
     period: "2025 May - Dec",
     title: "Cloud Architecture & Administration (Postgrad)",
     subtitle: "Seneca Polytechnic - Toronto",
@@ -18,7 +31,7 @@ const timeline = [
     ],
   },
   {
-    period: "2024 - 2025",
+    period: "2024 Sept - 2025 Apr",
     title: "Cybersecurity & Threat Management (Postgrad)",
     subtitle: "Seneca Polytechnic - Toronto",
     highlight: "President's Honour List - 4.0 / 4.0 GPA",
@@ -125,11 +138,14 @@ function Resume() {
             <p className="eyebrow">Resume</p>
             <h1>Kalpit Swami</h1>
             <p className="hero-summary">
-              Highly motivated Cloud & DevOps Engineer with strong technical
-              expertise in AWS, Terraform, CI/CD, Docker, Kubernetes, and Linux.
-              Possess strong analytical thinking, excellent communication and
-              collaboration skills, with a commitment to following the latest
-              industry trends in cloud, security and DevOps.
+              Cloud & DevOps Engineer who automated infrastructure across 21
+              government sites using Ansible, deployed production microservices
+              on Amazon EKS with Terraform and GitHub Actions CI/CD, and
+              designed secure multi-environment AWS architectures with OIDC
+              authentication, IRSA secrets injection, and least-privilege
+              networking. Postgraduate-trained in Cloud Architecture &
+              Cybersecurity (4.0 GPA). AWS JAM winner. 4x President's Honour
+              List.
             </p>
             <ul className="hero-meta">
               <li>
@@ -181,7 +197,7 @@ function Resume() {
                 <div className="focus-tag">{track.tag}</div>
                 <p>{track.detail}</p>
                 <a href={track.href} target="_blank" rel="noreferrer">
-                  {track.action} ->
+                  {track.action}
                 </a>
               </div>
             ))}
