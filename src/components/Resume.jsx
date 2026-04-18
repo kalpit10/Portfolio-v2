@@ -11,13 +11,12 @@ const timeline = [
     period: "2026 Jan - Apr",
     title: "Information Technology Analyst (Co-op)",
     subtitle:
-      "Ministry of Public & Business Service Delivery & Procurement | GovTechON - North York, Ontario",
+      "Ministry of Health (MPBSDP) | Government of Ontario, North York",
     bullets: [
-      "Developed and deployed Infrastructure-as-Code (IaC) using Ansible to automate OS provisioning and server configuration across 21 sites.",
-      "Engineered Python and PowerShell automation scripts to streamline infrastructure operations, including a phased Citrix VDA migration.",
-      "Designed and deployed interactive monitoring dashboards using Power BI to improve system observability and support data-driven operational reporting for stakeholders.",
-      "Configured automated alerting workflows using Power Automate to enable proactive incident detection and faster response times, driving operational excellence.",
-      "Enforced security and compliance standards across a government cloud environment by managing 100+ infrastructure Change Requests, ensuring system reliability.",
+      "Automated Ubuntu OS provisioning across 21 managed sites with a parallel-safe Ansible playbook using per-VM OVA templates and cloud-init, cutting effective provisioning time by ~80%.",
+      "Authored PowerShell automation for a 150-machine Citrix VDA upgrade, contributing to a team effort that collapsed a ~187-hour manual process into ~12 hours of unattended runtime.",
+      "Modernized the application lifecycle tracker by migrating Excel data to SharePoint, building 5 Power BI dashboards, and automating bi-weekly stakeholder reporting via Power Automate.",
+      "Authored and coordinated 100+ infrastructure Change Requests as Change Coordinator, driving them through CAB approval, implementation, and closure in a regulated government cloud environment.",
     ],
   },
   {
