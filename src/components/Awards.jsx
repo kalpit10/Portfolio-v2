@@ -35,10 +35,7 @@ const awards = [
       "Strengthens the cloud foundation behind production-style AWS projects, Terraform deployments, and DevOps automation work.",
     ],
     tags: ["AWS", "Solutions Architect", "Cloud Architecture", "Certification"],
-    link: {
-      href: awsSaaCredlyUrl,
-      label: "View verified Credly badge",
-    },
+    link: null,
   },
   {
     id: "aws-jam-2024",
