@@ -70,6 +70,12 @@
   padding: 1rem;
   gap: 0.5rem;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.award-media-badge {
+  min-height: clamp(260px, 38vw, 430px);
+  padding: clamp(1.25rem, 4vw, 3rem);
 }
 
 .award-media-grid {
@@ -101,6 +107,11 @@
   height: auto;
   max-height: 520px;
   object-fit: contain;
+}
+
+.award-media-badge img {
+  width: min(100%, 330px);
+  max-height: clamp(190px, 30vw, 300px);
 }
 
 .award-media-label {
@@ -289,6 +300,10 @@
 
   .award-panel {
     padding: 1.5rem;
+  }
+
+  .award-media-badge {
+    min-height: 240px;
   }
 
   .award-media {

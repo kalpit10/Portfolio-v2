@@ -1,14 +1,45 @@
 import React, { useEffect, useState } from "react";
 import "../Stylesheet/Awards.css";
-import { FaTrophy, FaMedal, FaLinkedinIn } from "react-icons/fa";
+import { FaAws, FaTrophy, FaMedal, FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
 import JAMImage from "../images/JAM.png";
 import CloudPHLSummer from "../images/PHL_Cloud_Summer2025.png";
 import CloudPHLFall from "../images/PHL_Cloud_Fall2025.png";
 import CyberPHLFall from "../images/PHL_Cybersecurity_Fall2024.png";
 import CyberPHLWinter from "../images/PHL_Cybersecurity_Winter2025.png";
+import AwsSaaBadge from "../images/aws-certified-solutions-architect-associate (1).png";
+
+const awsSaaCredlyUrl =
+  "https://www.credly.com/badges/e72f6291-cf8f-4bc6-930a-263fdacb98dc/public_url";
 
 const awards = [
+  {
+    id: "aws-saa",
+    title: "AWS Certified Solutions Architect - Associate",
+    meta: "Amazon Web Services Training and Certification",
+    timeframe: "2026",
+    icon: <FaAws />,
+    covers: [
+      {
+        src: AwsSaaBadge,
+        alt: "AWS Certified Solutions Architect - Associate badge",
+        label: "Verified on Credly",
+        href: awsSaaCredlyUrl,
+        variant: "badge",
+      },
+    ],
+    description:
+      "Earned the AWS Solutions Architect - Associate credential, validating practical knowledge of secure, resilient, high-performing, and cost-optimized cloud architecture on AWS.",
+    highlights: [
+      "Validated architecture skills across compute, networking, storage, security, reliability, and cost optimization.",
+      "Strengthens the cloud foundation behind production-style AWS projects, Terraform deployments, and DevOps automation work.",
+    ],
+    tags: ["AWS", "Solutions Architect", "Cloud Architecture", "Certification"],
+    link: {
+      href: awsSaaCredlyUrl,
+      label: "View verified Credly badge",
+    },
+  },
   {
     id: "aws-jam-2024",
     title: "1st Place | AWS Summit JAM",
@@ -116,11 +147,12 @@ const Awards = () => {
     <section className="p-3 header app awards-section" id="awards">
       <div className="container py-5 px-3">
         <div className="awards-heading text-center">
-          <p className="eyebrow">Awards & Milestones</p>
-          <h2 className="fw-bold dark-project-h1">AWARDS & ACHIEVEMENTS</h2>
+          <p className="eyebrow">Certifications, Awards & Milestones</p>
+          <h2 className="fw-bold dark-project-h1">CERTIFICATIONS & AWARDS</h2>
           <p className="section-lede">
-            Recognition from industry events and academic showcases where cloud
-            engineering, security, and teamwork delivered measurable impact.
+            Verified credentials and recognition from industry events and
+            academic showcases where cloud engineering, security, and teamwork
+            delivered measurable impact.
           </p>
         </div>
 
@@ -138,10 +170,17 @@ const Awards = () => {
               {award.covers && award.covers.length > 0 && (
                 <>
                   {award.covers.length === 1 ? (
-                    <button
-                      className="award-media-single"
-                      type="button"
-                      onClick={() => openCover(award.covers[0])}
+                    award.covers[0].href ? (
+                    <a
+                      className={`award-media-single ${
+                        award.covers[0].variant === "badge"
+                          ? "award-media-badge"
+                          : ""
+                      }`}
+                      href={award.covers[0].href}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={award.covers[0].label}
                     >
                       <img
                         src={award.covers[0].src}
@@ -151,7 +190,23 @@ const Awards = () => {
                       <span className="award-media-label">
                         {award.covers[0].label}
                       </span>
-                    </button>
+                    </a>
+                    ) : (
+                      <button
+                        className="award-media-single"
+                        type="button"
+                        onClick={() => openCover(award.covers[0])}
+                      >
+                        <img
+                          src={award.covers[0].src}
+                          alt={award.covers[0].alt}
+                          loading="lazy"
+                        />
+                        <span className="award-media-label">
+                          {award.covers[0].label}
+                        </span>
+                      </button>
+                    )
                   ) : (
                     <div className="award-media-grid">
                       {award.covers.map((cover) => (

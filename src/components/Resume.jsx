@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { FaAws, FaExternalLinkAlt, FaMedium } from "react-icons/fa";
 import "../Stylesheet/Resume.css";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -9,7 +10,7 @@ import Footer from "./Footer";
 const timeline = [
   {
     period: "2026 Jan - Apr",
-    title: "Information Technology Analyst (Co-op)",
+    title: "Information Technology Analyst, DevOps & Infrastructure (Co-op)",
     subtitle:
       "Ministry of Health (MPBSDP) | Government of Ontario, North York",
     bullets: [
@@ -61,53 +62,55 @@ const timeline = [
   },
 ];
 
-const focusTracks = [
+const writingFeatures = [
   {
-    tag: "Cloud Projects",
-    detail:
-      "Capstone EKS platform, 3-tier Terraform architecture, and serverless data pipeline live inside the Projects section.",
-    action: "Browse Projects",
-    href: "/",
+    type: "Case Study",
+    project: "EKS Capstone Platform",
+    title:
+      "Deploying a Production-Ready E-Commerce Platform on AWS EKS",
+    summary:
+      "End-to-end write-up of a production-style MERN deployment on AWS EKS, covering Terraform environments, ECR, GitHub Actions, OIDC, IRSA, Secrets Manager, HPA, ALB ingress, and CloudWatch observability.",
+    href: "https://medium.com/@kalpit.swami/deploying-a-production-ready-e-commerce-platform-on-aws-eks-our-end-to-end-cloud-devops-journey-1fda5881e03d",
+    readTime: "13 min read",
+    date: "Nov 2025",
+    topics: [
+      "Amazon EKS",
+      "Terraform",
+      "GitHub Actions",
+      "OIDC",
+      "IRSA",
+      "CloudWatch",
+    ],
   },
   {
-    tag: "Awards & Spotlights",
-    detail:
-      "AWS Summit JAM win plus dual President's Honour List write-ups are showcased in the Awards area.",
-    action: "See Awards",
-    href: "/",
+    type: "Two-Part Series",
+    project: "3-Tier AWS Architecture",
+    title: "Building and Hardening a 3-Tier AWS Platform",
+    summary:
+      "A two-part technical series that starts with a high-availability Terraform build, then evolves it into a secure automated setup with remote state, CI/CD, secrets handling, health checks, and cost review.",
+    readTime: "6 min + upgrade story",
+    date: "Aug 2025",
+    topics: [
+      "VPC",
+      "ALB",
+      "Auto Scaling",
+      "RDS",
+      "Secrets Manager",
+      "Remote State",
+    ],
+    parts: [
+      {
+        label: "Part 1",
+        title: "Scalable High-Availability 3-Tier AWS Infrastructure",
+        href: "https://medium.com/@kalpit.swami/i-built-a-scalable-high-availability-3-tier-aws-infrastructure-using-terraform-heres-what-i-4e75aaad704b",
+      },
+      {
+        label: "Part 2",
+        title: "Secure & Automated 3-Tier AWS Upgrade",
+        href: "https://medium.com/@kalpit.swami/how-i-transformed-a-simple-3-tier-aws-project-into-a-secure-automated-setup-d9a07dddf27c",
+      },
+    ],
   },
-  {
-    tag: "Writing & Network",
-    detail:
-      "Long-form breakdowns, recommendations, and community highlights live on LinkedIn.",
-    action: "LinkedIn Profile",
-    href: "https://www.linkedin.com/in/kalpitswami/",
-  },
-];
-
-const competencies = [
-  "Platform Engineering & Cloud Architecture",
-  "DevSecOps Automation & GitHub Actions",
-  "Security Compliance & Executive Reporting",
-  "Client Collaboration & Delivery Leadership",
-];
-
-const toolset =
-  "AWS - Terraform - Kubernetes - Docker - GitHub Actions - Linux - Bash - JavaScript - React - Node.js - MongoDB";
-
-const achievements = [
-  {
-    label: "AWS JAM Winner - AWS Summit 2025 (details in Awards)",
-    href: "https://www.linkedin.com/feed/update/urn:li:activity:7369781102091235330/",
-  },
-  {
-    label: "President's Honour List (Cloud Architecture & Administration)",
-  },
-  {
-    label: "President's Honour List (Cybersecurity & Threat Management)",
-  },
-  { label: "Core Member - NSS & IT Club (ENIGMA), JIMS Vasant Kunj" },
-  { label: "Silver Medalist - CBSE Inter-Zonal Badminton Tournament" },
 ];
 
 function Resume() {
@@ -186,23 +189,6 @@ function Resume() {
           </div>
         </section>
 
-        <section className="resume-section resume-focus">
-          <header>
-            <h3>Focus Areas</h3>
-          </header>
-          <div className="focus-stream">
-            {focusTracks.map((track) => (
-              <div className="focus-row" key={track.tag}>
-                <div className="focus-tag">{track.tag}</div>
-                <p>{track.detail}</p>
-                <a href={track.href} target="_blank" rel="noreferrer">
-                  {track.action}
-                </a>
-              </div>
-            ))}
-          </div>
-        </section>
-
         <section className="resume-section">
           <header>
             <h3>Career & Education Timeline</h3>
@@ -230,37 +216,77 @@ function Resume() {
           </div>
         </section>
 
-        <section className="resume-section">
-          <header>
-            <h3>Competencies & Toolset</h3>
+        <section className="resume-section writing-section">
+          <header className="writing-header">
+            <p className="eyebrow">Technical Writing</p>
+            <h3>Project Deep Dives</h3>
+            <p>
+              Medium articles that document the engineering decisions behind
+              the two cloud projects most relevant to this resume.
+            </p>
           </header>
-          <div className="competency-grid">
-            <ul>
-              {competencies.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-            <p className="toolset">Toolset: {toolset}</p>
-          </div>
-        </section>
+          <div className="writing-grid">
+            {writingFeatures.map((article) => (
+              <article
+                className={`writing-card ${
+                  article.parts ? "writing-series" : "writing-featured"
+                }`}
+                key={article.title}
+              >
+                <div className="writing-card-top">
+                  <div className="writing-icon">
+                    {article.parts ? <FaAws /> : <FaMedium />}
+                  </div>
+                  <div>
+                    <span className="writing-type">{article.type}</span>
+                    <h4>{article.title}</h4>
+                  </div>
+                </div>
 
-        <section className="resume-section">
-          <header>
-            <h3>Awards & Activities</h3>
-          </header>
-          <ul className="achievement-list">
-            {achievements.map((achievement) => (
-              <li key={achievement.label}>
-                {achievement.href ? (
-                  <a href={achievement.href} target="_blank" rel="noreferrer">
-                    {achievement.label}
-                  </a>
+                <p className="writing-project">Supports: {article.project}</p>
+                <p className="writing-summary">{article.summary}</p>
+
+                <div className="writing-meta-row">
+                  <span>{article.date}</span>
+                  <span>{article.readTime}</span>
+                </div>
+
+                <div className="writing-topics">
+                  {article.topics.map((topic) => (
+                    <span key={topic}>{topic}</span>
+                  ))}
+                </div>
+
+                {article.parts ? (
+                  <div className="writing-parts">
+                    {article.parts.map((part) => (
+                      <a
+                        href={part.href}
+                        target="_blank"
+                        rel="noreferrer"
+                        key={part.href}
+                      >
+                        <span>{part.label}</span>
+                        {part.title}
+                        <FaExternalLinkAlt />
+                      </a>
+                    ))}
+                  </div>
                 ) : (
-                  achievement.label
+                  <div className="writing-actions">
+                    <a
+                      href={article.href}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Read on Medium
+                      <FaExternalLinkAlt />
+                    </a>
+                  </div>
                 )}
-              </li>
+              </article>
             ))}
-          </ul>
+          </div>
         </section>
       </main>
       <Footer />

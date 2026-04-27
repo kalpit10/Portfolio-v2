@@ -1,71 +1,107 @@
-# 🌐 Kalpit Swami
+# Kalpit Swami | Cloud & DevOps Portfolio
 
-Welcome to my personal cloud engineering portfolio, built to showcase my hands-on experience with AWS, DevOps tools, Infrastructure as Code, and secure, scalable architecture design.
+This repository powers my personal portfolio: a focused, evidence-driven site for presenting my work as a Cloud & DevOps Engineer.
 
-🟢 **Live Website:** [www.kalpitswami.com](https://www.kalpitswami.com)
+Live site: [www.kalpitswami.com](https://www.kalpitswami.com)
 
----
+## About Me
 
-## 📌 About Me
+I build cloud infrastructure that is automated, secure, observable, and realistic enough to stand up in production-style environments. My work is centered on AWS, Terraform, Kubernetes, CI/CD, Linux automation, and security-first cloud architecture.
 
-I'm a Cloud Architecture & Cybersecurity post-grad student from Seneca Polytechnic (Toronto), passionate about deploying modern, secure cloud-native applications using tools like:
+I have hands-on experience automating infrastructure across 21 government-managed sites, building AWS platforms with Terraform and GitHub Actions, deploying workloads on Amazon EKS, and documenting engineering decisions through technical writing. I also hold the AWS Certified Solutions Architect - Associate certification and completed postgraduate studies in Cloud Architecture & Administration and Cybersecurity & Threat Management with a 4.0 GPA.
 
-- **AWS** (VPC, ALB, EC2, RDS, S3, Lambda, IAM, CloudFront, EventBridge)
-- **Terraform** for Infrastructure as Code (modular 3-tier deployments)
-- **GitHub Actions** for CI/CD
-- **Docker** & **Bash scripting**
-- **React.js** for frontend development
+## What This Portfolio Shows
 
----
+This site is designed to make my technical proof easy to inspect:
 
-## 🔧 Featured Projects
+- Cloud and DevOps projects with architecture context, implementation details, and source links
+- AWS certification, academic honours, and AWS Summit JAM recognition
+- Technical writing that explains how I designed and improved real AWS projects
+- Resume page with career timeline, downloadable PDF, and project deep dives
+- Contact flow with client-side validation and basic spam protection
 
-### 🏗️ Scalable 3-Tier Web Architecture on AWS
+## Featured Work
 
-[🔗 GitHub Repo](https://github.com/kalpit10/3-Tier-Web-Architecture-Terraform)
+### Production-Ready E-Commerce Platform on AWS EKS
 
-- Built a modular, production-style 3-tier infrastructure on AWS using Terraform
-- Configured VPC, public/private subnets, Auto Scaling Group, Application Load Balancer, Bastion Host, RDS MySQL
-- Included CloudWatch alarms, secure SSH access, and high availability setup
+I helped design and deploy a production-style MERN e-commerce platform on Amazon EKS using Terraform, GitHub Actions, ECR, OIDC federation, IRSA, Secrets Manager, ALB ingress, Horizontal Pod Autoscaling, and CloudWatch observability.
 
----
+Links:
 
-### 🌐 Serverless Portfolio Deployment
+- [Infrastructure Repository](https://github.com/kalpit10/Capstone-Infra-Team4)
+- [Web Application Repository](https://github.com/kalpit10/Capstone-WebApp)
+- [Medium Deep Dive](https://medium.com/@kalpit.swami/deploying-a-production-ready-e-commerce-platform-on-aws-eks-our-end-to-end-cloud-devops-journey-1fda5881e03d)
 
-[🔗 Live Site](https://www.kalpitswami.com)
+### Production-Ready 3-Tier AWS Infrastructure
 
-- Deployed portfolio using **AWS S3 (static hosting)**, **CloudFront**, and **ACM (SSL)**
-- Managed DNS via **Namecheap** and automated deployment using **GitHub Actions CI/CD**
-- Secure contact form using **EmailJS**, with secrets stored via GitHub repository secrets
-- Infrastructure provisioned using Terraform
+I built and evolved a high-availability 3-tier AWS architecture using Terraform. The project includes VPC design, public/private subnets, ALB, Auto Scaling EC2, RDS, bastion access, CloudWatch, remote state, DynamoDB locking, GitHub Actions automation, and cost-aware design.
 
----
+Links:
 
-## 🎓 Education
+- [GitHub Repository](https://github.com/kalpit10/3-Tier-Web-Architecture-Terraform-)
+- [Original Build Article](https://medium.com/@kalpit.swami/i-built-a-scalable-high-availability-3-tier-aws-infrastructure-using-terraform-heres-what-i-4e75aaad704b)
+- [Security & Automation Upgrade Article](https://medium.com/@kalpit.swami/how-i-transformed-a-simple-3-tier-aws-project-into-a-secure-automated-setup-d9a07dddf27c)
 
-**Seneca College of Applied Arts and Technology**
+### Serverless Data Scraping & Notification Pipeline
 
-- Post-Graduate Certificate in **Cloud Architecture & Administration** (May 2025 – Dec 2025)
-- Post-Graduate Certificate in **Cybersecurity & Threat Management** (Sep 2024 – Apr 2025)
-- GPA: 4.0 / 4.0 (High Honors)
+I built a serverless AWS pipeline using EventBridge, Lambda, S3, SNS, CloudWatch, IAM least privilege, and Python scraping logic to automate scheduled data collection and notification workflows.
 
----
+Link:
 
-## 🧠 Areas of Interest
+- [GitHub Repository](https://github.com/kalpit10/aws-serverless-data-pipeline)
 
-- Cloud Infrastructure (AWS/GCP)
-- Infrastructure as Code (Terraform)
-- CI/CD Automation
-- Serverless Architecture
-- Video Games
+### Resumaid | Secure Resume Builder & ATS Insights
 
----
+I worked on a security-focused resume builder concept using React, Node.js, MongoDB, MFA, rate limiting, secure headers, and OWASP-aligned design decisions.
 
-## 🤝 Connect with Me
+Link:
 
-- 🔗 [LinkedIn](https://www.linkedin.com/in/kalpitswami)
-- 🧑‍💻 [GitHub](https://github.com/kalpit10)
+- [GitHub Repository](https://github.com/kalpit10/Resumaid)
 
----
+## Recognition
 
-> “Building scalable, secure, and automated systems — one cloud project at a time.”
+- AWS Certified Solutions Architect - Associate
+- 1st Place, AWS Summit JAM 2025
+- President's Honour List, Cloud Architecture & Administration
+- President's Honour List, Cybersecurity & Threat Management
+
+## Core Stack
+
+Cloud and infrastructure:
+
+- AWS, Terraform, Amazon EKS, Kubernetes, Docker, Linux, Bash
+
+Automation and delivery:
+
+- GitHub Actions, Ansible, PowerShell, CI/CD, OIDC-based cloud deployment
+
+Security and observability:
+
+- IAM, IRSA, Secrets Manager, CloudWatch, VPC isolation, least-privilege design
+
+Application development:
+
+- React, JavaScript, Node.js, MongoDB
+
+## Portfolio Tech Stack
+
+The portfolio itself is built with:
+
+- React
+- React Router
+- Framer Motion
+- AOS animations
+- Bootstrap
+- React Icons
+- EmailJS
+
+## Connect
+
+- [Portfolio](https://www.kalpitswami.com)
+- [LinkedIn](https://www.linkedin.com/in/kalpitswami)
+- [GitHub](https://github.com/kalpit10)
+- [Medium](https://medium.com/@kalpit.swami)
+
+## Positioning
+
+I use this portfolio as a living proof-of-work system. If I list a tool, project, or architecture here, it is because I have built with it, written about it, or used it in a real delivery context.
