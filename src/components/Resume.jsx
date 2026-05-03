@@ -146,8 +146,9 @@ function Resume() {
               designed secure multi-environment AWS architectures with OIDC
               authentication, IRSA secrets injection, and least-privilege
               networking. Postgraduate-trained in Cloud Architecture &
-              Cybersecurity (4.0 GPA). AWS JAM winner. 4x President's Honour
-              List.
+              Cybersecurity (4.0 GPA). AWS JAM award recipient: 1st place at
+              AWS Summit JAM 2025 and 2nd place at AWS User Group JAM in April
+              2026. 4x President's Honour List.
             </p>
             <ul className="hero-meta">
               <li>
@@ -179,8 +180,8 @@ function Resume() {
               <span>4x President's Honour List</span>
             </div>
             <div>
-              <strong>AWS Summit</strong>
-              <span>JAM Winner 2025</span>
+              <strong>AWS JAM</strong>
+              <span>1st Place 2025 + 2nd Place 2026</span>
             </div>
             <div>
               <strong>Postgrad</strong>

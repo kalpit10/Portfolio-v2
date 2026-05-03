@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "../Stylesheet/Awards.css";
-import { FaAws, FaTrophy, FaMedal, FaLinkedinIn } from "react-icons/fa";
+import { FaAws, FaTrophy, FaMedal } from "react-icons/fa";
 import { motion } from "framer-motion";
 import JAMImage from "../images/JAM.png";
+import AWSJamSecondPosition from "../images/AWS_JAM_2nd_Position.png";
 import CloudPHLSummer from "../images/PHL_Cloud_Summer2025.png";
 import CloudPHLFall from "../images/PHL_Cloud_Fall2025.png";
 import CyberPHLFall from "../images/PHL_Cybersecurity_Fall2024.png";
@@ -38,31 +39,32 @@ const awards = [
     link: null,
   },
   {
-    id: "aws-jam-2024",
-    title: "1st Place | AWS Summit JAM",
-    meta: "AWS Summit | Team Jam Challenge",
-    timeframe: "2025",
+    id: "aws-jam",
+    title: "AWS JAM Cloud Challenge Awards",
+    meta: "AWS Summit JAM 2025 + AWS User Group JAM April 2026",
+    timeframe: "2025 - 2026",
     icon: <FaTrophy />,
+    layout: "stacked-showcase",
     covers: [
       {
         src: JAMImage,
-        alt: "AWS Summit JAM 2025 winning certificate",
-        label: "AWS Summit JAM 2025",
+        alt: "First position at AWS Summit JAM 2025",
+        label: "1st Position | AWS Summit JAM 2025",
+      },
+      {
+        src: AWSJamSecondPosition,
+        alt: "Second position at AWS User Group JAM April 2026",
+        label: "2nd Position | AWS User Group JAM April 2026",
       },
     ],
     description:
-      "Topped the AWS Summit JAM leaderboard by stabilizing two serverless GenAI missions: repairing the Transcribe->Translate->Bedrock voice pipeline and rebuilding the Larry librarian chatbot so it understood intent and reached live library APIs.",
+      "Recognized across two AWS JAM competitions for solving cloud challenges in a timed, hands-on environment using AWS services including Amazon Bedrock, Lambda, CodePipeline, and other production-focused cloud capabilities.",
     highlights: [
-      "Fixed Lambda wiring and prompts so multilingual voice transcripts, translations, and summaries flowed end-to-end without hallucinations.",
-      "Rewired the Larry chatbot orchestration so Bedrock parsed intent correctly and Lambda executed live search + reservation APIs.",
-      "Improved reliability of the GenAI workflows, enabling the team to complete JAM challenges like these and secure the win.",
-      "Collaborated with Saima Anam Syed, Prasanth K Penuboina, and Sana Muhammad Ashraf; guided by Ashwin Bhargava and Aditya Mysore.",
+      "Completed scenario-based missions that required fast troubleshooting, secure service integration, and practical cloud architecture decisions.",
+      "Applied serverless, GenAI, automation, and CI/CD patterns under competition pressure while collaborating effectively in a team setting.",
     ],
-    tags: ["AWS JAM", "CloudOps", "Team Award", "Innovation"],
-    link: {
-      href: "https://www.linkedin.com/feed/update/urn:li:activity:7369781102091235330/",
-      label: "LinkedIn recap",
-    },
+    tags: ["AWS JAM", "Cloud Challenges", "Serverless", "GenAI"],
+    link: null,
   },
   {
     id: "phl-cloud",
@@ -157,7 +159,9 @@ const Awards = () => {
           {awards.map((award) => (
             <motion.article
               key={award.id}
-              className="award-panel"
+              className={`award-panel ${
+                award.layout ? `award-panel-${award.layout}` : ""
+              }`}
               variants={cardVariants}
               initial="hidden"
               whileInView="visible"
@@ -205,7 +209,13 @@ const Awards = () => {
                       </button>
                     )
                   ) : (
-                    <div className="award-media-grid">
+                    <div
+                      className={`award-media-grid ${
+                        award.layout === "stacked-showcase"
+                          ? "award-media-stack"
+                          : ""
+                      }`}
+                    >
                       {award.covers.map((cover) => (
                         <button
                           key={cover.src}
@@ -249,17 +259,6 @@ const Awards = () => {
                   ))}
                 </div>
 
-                {award.link && (
-                  <a
-                    className="award-link icon-link"
-                    href={award.link.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label={award.link.label}
-                  >
-                    <FaLinkedinIn />
-                  </a>
-                )}
               </div>
             </motion.article>
           ))}
