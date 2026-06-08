@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { FaAws, FaExternalLinkAlt, FaMedium } from "react-icons/fa";
+import { FaAws, FaDev, FaExternalLinkAlt, FaMedium } from "react-icons/fa";
 import "../Stylesheet/Resume.css";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -63,6 +63,24 @@ const timeline = [
 ];
 
 const writingFeatures = [
+  {
+    type: "Technical Rebuild",
+    project: "EKS Capstone Platform",
+    title: "From Terraform Spaghetti to a Production-Grade GitOps Platform",
+    summary:
+      "Continuation of the EKS capstone story, showing how the platform was rebuilt around clean ownership boundaries: Terraform for AWS infrastructure only, ArgoCD App of Apps for Kubernetes workloads, and External Secrets Operator with IRSA for runtime secrets. Covers pinned GitHub Actions, Trivy gates, VPC endpoints, Prometheus/Grafana, CloudWatch alarms, and the debugging lessons behind the final design.",
+    href: "https://dev.to/kalpit_swami/from-terraform-spaghetti-to-a-production-grade-gitops-platform-14i2",
+    readTime: "Deep dive",
+    date: "Jun 2026",
+    topics: [
+      "GitOps",
+      "ArgoCD",
+      "External Secrets",
+      "IRSA",
+      "Trivy",
+      "Prometheus",
+    ],
+  },
   {
     type: "Case Study",
     project: "EKS Capstone Platform",
@@ -222,8 +240,8 @@ function Resume() {
             <p className="eyebrow">Technical Writing</p>
             <h3>Project Deep Dives</h3>
             <p>
-              Medium articles that document the engineering decisions behind
-              the two cloud projects most relevant to this resume.
+              Articles that document the engineering decisions behind the cloud
+              projects most relevant to this resume.
             </p>
           </header>
           <div className="writing-grid">
@@ -236,7 +254,13 @@ function Resume() {
               >
                 <div className="writing-card-top">
                   <div className="writing-icon">
-                    {article.parts ? <FaAws /> : <FaMedium />}
+                    {article.parts ? (
+                      <FaAws />
+                    ) : article.href?.includes("dev.to") ? (
+                      <FaDev />
+                    ) : (
+                      <FaMedium />
+                    )}
                   </div>
                   <div>
                     <span className="writing-type">{article.type}</span>
@@ -280,7 +304,7 @@ function Resume() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      Read on Medium
+                      Read on {article.href?.includes("dev.to") ? "Dev.to" : "Medium"}
                       <FaExternalLinkAlt />
                     </a>
                   </div>

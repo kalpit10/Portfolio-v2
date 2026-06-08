@@ -2,6 +2,7 @@ import React from "react";
 import "../Stylesheet/Projects.css";
 import {
   FaGithub,
+  FaDev,
   FaMedium,
   FaLinkedinIn,
   FaExternalLinkAlt,
@@ -17,23 +18,25 @@ import { motion } from "framer-motion";
 const featuredProjects = [
   {
     id: "capstone",
-    title: "Capstone: Cloud-Native E-Commerce Deployment on AWS",
-    badge: "Featured · DevOps Capstone",
-    subtitle: "Terraform landing zone · Private EKS · GitHub Actions OIDC",
+    title: "Cloud-Native E-Commerce Platform on AWS EKS",
+    badge: "Featured | DevOps Capstone",
+    subtitle: "Terraform | ArgoCD App of Apps | External Secrets Operator",
     description:
-      "Architected a dual-environment AWS platform that provisions VPCs, EKS, and ECR through modular Terraform, then continuously deploys containers through GitHub Actions and OIDC federation. Hardened workloads with IRSA, Secrets Manager, private node groups, and ALB ingress to deliver a resilient ecommerce deployment without exposing static credentials.",
+      "Built a production-grade GitOps platform deploying a MERN e-commerce application on AWS EKS. Terraform provisions infrastructure only. ArgoCD manages all Kubernetes workloads via App of Apps pattern. External Secrets Operator syncs secrets from AWS Secrets Manager at runtime, keeping credentials out of Git and Terraform state entirely.",
     highlights: [
-      "Reusable Terraform blueprints with remote state + DynamoDB locking",
-      "End-to-end CI/CD: build, scan, and promote images to ECR automatically",
-      "Horizontal Pod Autoscaling, CloudWatch dashboards, and GitOps-style rollouts",
+      "Zero static credentials via GitHub Actions OIDC, IRSA, and External Secrets Operator",
+      "Full automated standup: Terraform, Trivy-scanned ECR builds, ArgoCD bootstrap in sequence",
+      "Prometheus, Grafana, Alertmanager, and 8 CloudWatch Alarms with SNS notifications",
     ],
     stack: [
-      "Terraform",
+      "TERRAFORM",
       "AWS EKS",
-      "GitHub Actions",
-      "Kubernetes",
-      "Secrets Manager",
-      "CloudWatch",
+      "ARGOCD",
+      "GITHUB ACTIONS",
+      "KUBERNETES",
+      "PROMETHEUS",
+      "GRAFANA",
+      "SECRETS MANAGER",
     ],
     links: [
       {
@@ -47,12 +50,12 @@ const featuredProjects = [
         icon: <FaGithub />,
       },
       {
-        href: "https://medium.com/@kalpit.swami/deploying-a-production-ready-e-commerce-platform-on-aws-eks-our-end-to-end-cloud-devops-journey-1fda5881e03d",
-        label: "Medium",
-        icon: <FaMedium />,
+        href: "https://dev.to/kalpit_swami/from-terraform-spaghetti-to-a-production-grade-gitops-platform-14i2",
+        label: "Dev.to",
+        icon: <FaDev />,
       },
       {
-        href: "https://www.linkedin.com/posts/kalpitswami_cloudarchitecture-devops-aws-activity-7400590798880296960-PN6O?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQM8GwBGpWqq6pEKclRv9Mh5Rqmcxx7Qio",
+        href: "https://www.linkedin.com/posts/kalpitswami_back-in-december-i-built-a-cloud-infrastructure-ugcPost-7469071165655859202-72rV/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQM8GwBGpWqq6pEKclRv9Mh5Rqmcxx7Qio",
         label: "LinkedIn",
         icon: <FaLinkedinIn />,
       },

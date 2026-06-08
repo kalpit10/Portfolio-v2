@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import "hover.css/css/hover-min.css";
 import { IoLogoJavascript } from "react-icons/io";
 import { IoLogoReact } from "react-icons/io5";
-import { FaNode, FaDocker, FaLinux, FaAws } from "react-icons/fa";
+import { FaNode, FaDocker, FaLinux, FaAws, FaShieldAlt } from "react-icons/fa";
 import {
   SiAnsible,
   SiMongodb,
@@ -12,6 +12,15 @@ import {
   SiTerraform,
   SiGithubactions,
   SiKubernetes,
+  SiArgo,
+  SiHelm,
+  SiTrivy,
+  SiPrometheus,
+  SiGrafana,
+  SiPython,
+  SiMicrosoftazure,
+  SiAzuredevops,
+  SiAmazoncloudwatch,
 } from "react-icons/si";
 import { TbBrandGithub } from "react-icons/tb";
 import "../Stylesheet/Skills.css";
@@ -23,8 +32,10 @@ const skillCategories = [
     accent: "accent-cloud",
     skills: [
       { icon: <FaAws />, label: "Amazon Web Services" },
+      { icon: <SiMicrosoftazure />, label: "Microsoft Azure" },
       { icon: <FaDocker />, label: "Docker" },
       { icon: <SiKubernetes />, label: "Kubernetes" },
+      { icon: <SiHelm />, label: "Helm" },
     ],
   },
   {
@@ -34,6 +45,27 @@ const skillCategories = [
       { icon: <SiTerraform />, label: "Terraform" },
       { icon: <SiAnsible />, label: "Ansible" },
       { icon: <SiGithubactions />, label: "GitHub Actions" },
+      { icon: <SiArgo />, label: "ArgoCD" },
+    ],
+  },
+  {
+    title: "Security & Secrets",
+    accent: "accent-collab",
+    skills: [
+      { icon: <FaShieldAlt />, label: "IRSA & OIDC" },
+      { icon: <FaAws />, label: "AWS Secrets Manager" },
+      { icon: <SiTrivy />, label: "Trivy" },
+      { icon: <FaShieldAlt />, label: "Checkov" },
+    ],
+  },
+  {
+    title: "Observability",
+    accent: "accent-backend",
+    skills: [
+      { icon: <SiPrometheus />, label: "Prometheus" },
+      { icon: <SiGrafana />, label: "Grafana" },
+      { icon: <SiPrometheus />, label: "Alertmanager" },
+      { icon: <SiAmazoncloudwatch />, label: "CloudWatch" },
     ],
   },
   {
@@ -42,6 +74,7 @@ const skillCategories = [
     skills: [
       { icon: <FaLinux />, label: "Linux" },
       { icon: <SiGnubash />, label: "Bash" },
+      { icon: <SiPython />, label: "Python" },
     ],
   },
   {
@@ -63,7 +96,10 @@ const skillCategories = [
   {
     title: "Collaboration & Version Control",
     accent: "accent-collab",
-    skills: [{ icon: <TbBrandGithub />, label: "Git & GitHub" }],
+    skills: [
+      { icon: <TbBrandGithub />, label: "Git & GitHub" },
+      { icon: <SiAzuredevops />, label: "Azure DevOps" },
+    ],
   },
 ];
 
