@@ -18,7 +18,7 @@ import { motion } from "framer-motion";
 const featuredProjects = [
   {
     id: "capstone",
-    title: "Cloud-Native E-Commerce Platform on AWS EKS",
+    title: "Fully Automated EKS GitOps Platform - Zero Static Credentials",
     badge: "Featured | DevOps Capstone",
     subtitle: "Terraform | ArgoCD App of Apps | External Secrets Operator",
     description:
