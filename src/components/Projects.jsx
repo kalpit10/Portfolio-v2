@@ -64,7 +64,7 @@ const featuredProjects = [
   },
   {
     id: "three-tier",
-    title: "Production-Ready 3-Tier AWS Infrastructure",
+    title: "High-Availability AWS Infrastructure with Centralized Observability",
     badge: "Featured · Infra-as-Code",
     subtitle: "VPC · ALB · Auto Scaling EC2 · RDS · GitHub Actions",
     description:

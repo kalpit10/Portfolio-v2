@@ -14,10 +14,10 @@ const timeline = [
     subtitle:
       "Ministry of Health (MPBSDP) | Government of Ontario, North York",
     bullets: [
-      "Automated Ubuntu OS provisioning across 21 managed sites with a parallel-safe Ansible playbook using per-VM OVA templates and cloud-init, cutting effective provisioning time by ~80%.",
-      "Authored PowerShell automation for a 150-machine Citrix VDA upgrade, contributing to a team effort that collapsed a ~187-hour manual process into ~12 hours of unattended runtime.",
-      "Modernized the application lifecycle tracker by migrating Excel data to SharePoint, building 5 Power BI dashboards, and automating bi-weekly stakeholder reporting via Power Automate.",
-      "Authored and coordinated 100+ infrastructure Change Requests as Change Coordinator, driving them through CAB approval, implementation, and closure in a regulated government cloud environment.",
+      "Automated Ubuntu OS provisioning across 21 managed sites using Ansible with parallel-safe playbook and cloud-init, cutting provisioning time 80% and reducing per-batch runtime from 50 minutes to 5.",
+      "Authored PowerShell automation for a 150-machine Citrix VDA upgrade, compressing a ~190-hour manual process to 12 hours of unattended runtime, a 93% reduction in manual effort and time.",
+      "Automated network device and circuit provisioning in NetBox using Python, eliminating manual router record updates and switch entry creation across production network infrastructure.",
+      "Authored and shepherded 100+ infrastructure Change Requests spanning network patching, Windows patching, and data centre maintenance across 21 sites through full CAB approval with a 100% approval rate, including several expedited changes requiring accelerated review cycles.",
     ],
   },
   {
@@ -46,8 +46,8 @@ const timeline = [
     subtitle: "Shreni Education",
     highlight: "React/Tailwind single-owner engagement",
     bullets: [
-      "Owns discovery through launch for an education collective, integrating EmailJS workflows.",
-      "Balances SEO, performance, and content refreshes with agile releases.",
+      "Implemented automated build and deployment pipelines via Vercel and GitHub for a web application serving 200+ students, reducing manual release effort and enabling version-controlled deployments across production environment.",
+      "Delivered 103 commits across a 3-month development sprint, incorporating stakeholder feedback into iterative deployment cycles and maintaining updates through branch-based version control on GitHub.",
     ],
   },
   {
