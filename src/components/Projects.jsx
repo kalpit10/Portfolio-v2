@@ -11,15 +11,15 @@ import resumaidLogo from "../images/logodiv1.jpeg";
 import ShreniEducation from "../images/Shreni.png";
 import ThreeTierArch from "../images/3-Tier-Web-Arch.png";
 import awsServerlessScraper from "../images/aws-serverless-scraper.png";
-import CapstoneProject from "../images/Capstone.png";
+import EksGitopsProject from "../images/EKS_GitOps_Platform.png";
 import "../App.css";
 import { motion } from "framer-motion";
 
 const featuredProjects = [
   {
-    id: "capstone",
+    id: "eks-gitops",
     title: "Fully Automated EKS GitOps Platform - Zero Static Credentials",
-    badge: "Featured | DevOps Capstone",
+    badge: "Featured in Terraform Weekly Newsletter",
     subtitle: "Terraform | ArgoCD App of Apps | External Secrets Operator",
     description:
       "Built a production-grade GitOps platform deploying a MERN e-commerce application on AWS EKS. Terraform provisions infrastructure only. ArgoCD manages all Kubernetes workloads via App of Apps pattern. External Secrets Operator syncs secrets from AWS Secrets Manager at runtime, keeping credentials out of Git and Terraform state entirely.",
@@ -60,7 +60,7 @@ const featuredProjects = [
         icon: <FaLinkedinIn />,
       },
     ],
-    cover: CapstoneProject,
+    cover: EksGitopsProject,
   },
   {
     id: "three-tier",
@@ -152,7 +152,7 @@ const otherProjects = [
   {
     id: "resumaid",
     title: "Resumaid · Secure Resume Builder & ATS Insights · OWASP-Aligned",
-    badge: "Capstone · Cybersecurity",
+    badge: "Cybersecurity",
     subtitle: "OWASP Guardrails · MFA · ATS Insights",
     description:
       "Designed a modern resume builder that pairs polished templates with ATS checks while keeping applicant data encrypted, MFA-protected, and shielded with rate limiting + secure headers.",

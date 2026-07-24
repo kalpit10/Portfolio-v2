@@ -7,6 +7,9 @@ import "../Stylesheet/Resume.css";
 import Header from "./Header";
 import Footer from "./Footer";
 
+const terraformWeeklyNewsletterIssue280Url =
+  "https://www.weekly.tf/p/issue-280-crossplane-vs-terraform-spaghetti-to-gitops-finops-guardrails-with-opa-the-open-agent";
+
 const timeline = [
   {
     period: "2026 Jan - Apr",
@@ -27,7 +30,7 @@ const timeline = [
     highlight: "President's Honour List - 4.0 / 4.0 GPA",
     bullets: [
       "Created secure microservice landing zones across AWS/Azure with governance-ready automation.",
-      "Ran resiliency testing and compliance reporting that fed directly into capstone wins.",
+      "Ran resiliency testing and compliance reporting that fed directly into cloud architecture wins.",
     ],
   },
   {
@@ -65,11 +68,13 @@ const timeline = [
 const writingFeatures = [
   {
     type: "Technical Rebuild",
-    project: "EKS Capstone Platform",
+    project: "EKS GitOps Platform",
     title: "From Terraform Spaghetti to a Production-Grade GitOps Platform",
     summary:
-      "Continuation of the EKS capstone story, showing how the platform was rebuilt around clean ownership boundaries: Terraform for AWS infrastructure only, ArgoCD App of Apps for Kubernetes workloads, and External Secrets Operator with IRSA for runtime secrets. Covers pinned GitHub Actions, Trivy gates, VPC endpoints, Prometheus/Grafana, CloudWatch alarms, and the debugging lessons behind the final design.",
+      "Continuation of the EKS GitOps platform story, showing how the platform was rebuilt around clean ownership boundaries: Terraform for AWS infrastructure only, ArgoCD App of Apps for Kubernetes workloads, and External Secrets Operator with IRSA for runtime secrets. Covers pinned GitHub Actions, Trivy gates, VPC endpoints, Prometheus/Grafana, CloudWatch alarms, and the debugging lessons behind the final design.",
     href: "https://dev.to/kalpit_swami/from-terraform-spaghetti-to-a-production-grade-gitops-platform-14i2",
+    recognition: "Featured in Terraform Weekly Newsletter Issue #280",
+    recognitionHref: terraformWeeklyNewsletterIssue280Url,
     readTime: "Deep dive",
     date: "Jun 2026",
     topics: [
@@ -83,7 +88,7 @@ const writingFeatures = [
   },
   {
     type: "Case Study",
-    project: "EKS Capstone Platform",
+    project: "EKS GitOps Platform",
     title:
       "Deploying a Production-Ready E-Commerce Platform on AWS EKS",
     summary:
@@ -268,7 +273,11 @@ function Resume() {
                   </div>
                 </div>
 
-                <p className="writing-project">Supports: {article.project}</p>
+                <p className="writing-project">
+                  {article.recognition
+                    ? "Featured In Terraform Weekly Newsletter Issue #280"
+                    : `Supports: ${article.project}`}
+                </p>
                 <p className="writing-summary">{article.summary}</p>
 
                 <div className="writing-meta-row">

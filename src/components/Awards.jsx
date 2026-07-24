@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "../Stylesheet/Awards.css";
-import { FaAws, FaTrophy, FaMedal } from "react-icons/fa";
+import {
+  FaAws,
+  FaExternalLinkAlt,
+  FaLinkedinIn,
+  FaMedal,
+  FaNewspaper,
+  FaTrophy,
+} from "react-icons/fa";
 import { motion } from "framer-motion";
 import JAMImage from "../images/JAM.png";
 import AWSJamSecondPosition from "../images/AWS_JAM_2nd_Position.png";
@@ -9,34 +16,49 @@ import CloudPHLFall from "../images/PHL_Cloud_Fall2025.png";
 import CyberPHLFall from "../images/PHL_Cybersecurity_Fall2024.png";
 import CyberPHLWinter from "../images/PHL_Cybersecurity_Winter2025.png";
 import AwsSaaBadge from "../images/aws-certified-solutions-architect-associate (1).png";
+import TerraformWeeklyIssue280 from "../images/Terraform_Weekly_Newsletter_Issue_280.png";
 
 const awsSaaCredlyUrl =
   "https://www.credly.com/badges/e72f6291-cf8f-4bc6-930a-263fdacb98dc/public_url";
+const terraformWeeklyIssue280Url =
+  "https://www.weekly.tf/p/issue-280-crossplane-vs-terraform-spaghetti-to-gitops-finops-guardrails-with-opa-the-open-agent";
+const terraformWeeklyLinkedinPostUrl =
+  "https://www.linkedin.com/posts/antonbabenko_terraform-weekly-newsletter-issue-280-share-7485030079928967168-xiX7/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQM8GwBGpWqq6pEKclRv9Mh5Rqmcxx7Qio";
 
 const awards = [
   {
-    id: "aws-saa",
-    title: "AWS Certified Solutions Architect - Associate",
-    meta: "Amazon Web Services Training and Certification",
+    id: "terraform-weekly-issue-280",
+    title: "Featured in Terraform Weekly Newsletter",
+    meta: "Terraform Weekly Newsletter | Issue #280",
     timeframe: "2026",
-    icon: <FaAws />,
+    icon: <FaNewspaper />,
     covers: [
       {
-        src: AwsSaaBadge,
-        alt: "AWS Certified Solutions Architect - Associate badge",
-        label: "Verified on Credly",
-        href: awsSaaCredlyUrl,
-        variant: "badge",
+        src: TerraformWeeklyIssue280,
+        alt: "Terraform Weekly Newsletter feature for Issue 280",
+        label: "Terraform Weekly Newsletter Issue #280",
+        href: terraformWeeklyIssue280Url,
       },
     ],
     description:
-      "Earned the AWS Solutions Architect - Associate credential, validating practical knowledge of secure, resilient, high-performing, and cost-optimized cloud architecture on AWS.",
+      "The EKS GitOps rebuild article was featured in Terraform Weekly Newsletter Issue #280, highlighting the move from Terraform-managed Kubernetes workloads to a cleaner GitOps model with Terraform, ArgoCD, External Secrets Operator, and IRSA.",
     highlights: [
-      "Validated architecture skills across compute, networking, storage, security, reliability, and cost optimization.",
-      "Strengthens the cloud foundation behind production-style AWS projects, Terraform deployments, and DevOps automation work.",
+      "Recognized by Terraform Weekly Newsletter for practical infrastructure-as-code and GitOps engineering content.",
+      "Featured article documents the production-grade rebuild of an Amazon EKS platform with clearer ownership boundaries and zero static credentials.",
     ],
-    tags: ["AWS", "Solutions Architect", "Cloud Architecture", "Certification"],
-    link: null,
+    tags: ["Terraform Weekly Newsletter", "GitOps", "Amazon EKS", "ArgoCD"],
+    links: [
+      {
+        href: terraformWeeklyIssue280Url,
+        label: "Newsletter Issue #280",
+        icon: <FaExternalLinkAlt />,
+      },
+      {
+        href: terraformWeeklyLinkedinPostUrl,
+        label: "LinkedIn Feature Post",
+        icon: <FaLinkedinIn />,
+      },
+    ],
   },
   {
     id: "aws-jam",
@@ -64,6 +86,30 @@ const awards = [
       "Applied serverless, GenAI, automation, and CI/CD patterns under competition pressure while collaborating effectively in a team setting.",
     ],
     tags: ["AWS JAM", "Cloud Challenges", "Serverless", "GenAI"],
+    link: null,
+  },
+  {
+    id: "aws-saa",
+    title: "AWS Certified Solutions Architect - Associate",
+    meta: "Amazon Web Services Training and Certification",
+    timeframe: "2026",
+    icon: <FaAws />,
+    covers: [
+      {
+        src: AwsSaaBadge,
+        alt: "AWS Certified Solutions Architect - Associate badge",
+        label: "Verified on Credly",
+        href: awsSaaCredlyUrl,
+        variant: "badge",
+      },
+    ],
+    description:
+      "Earned the AWS Solutions Architect - Associate credential, validating practical knowledge of secure, resilient, high-performing, and cost-optimized cloud architecture on AWS.",
+    highlights: [
+      "Validated architecture skills across compute, networking, storage, security, reliability, and cost optimization.",
+      "Strengthens the cloud foundation behind production-style AWS projects, Terraform deployments, and DevOps automation work.",
+    ],
+    tags: ["AWS", "Solutions Architect", "Cloud Architecture", "Certification"],
     link: null,
   },
   {
@@ -147,7 +193,7 @@ const Awards = () => {
       <div className="container py-5 px-3">
         <div className="awards-heading text-center">
           <p className="eyebrow">Certifications, Awards & Milestones</p>
-          <h2 className="fw-bold dark-project-h1">CERTIFICATIONS & AWARDS</h2>
+          <h2 className="fw-bold dark-project-h1">ACHIEVEMENTS & CERTIFICATIONS</h2>
           <p className="section-lede">
             Verified credentials and recognition from industry events and
             academic showcases where cloud engineering, security, and teamwork
@@ -258,6 +304,23 @@ const Awards = () => {
                     </span>
                   ))}
                 </div>
+
+                {award.links && (
+                  <div className="award-links">
+                    {award.links.map((link) => (
+                      <a
+                        key={link.href}
+                        className="award-source-link"
+                        href={link.href}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {link.icon}
+                        {link.label}
+                      </a>
+                    ))}
+                  </div>
+                )}
 
               </div>
             </motion.article>
