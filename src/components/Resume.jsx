@@ -24,6 +24,16 @@ const timeline = [
     ],
   },
   {
+    period: "2024 Oct - 2026 Apr",
+    title: "AWS Cloud Deployment Specialist (Part-Time/On-call)",
+    subtitle: "OutHere Online | Mississauga, ON",
+    bullets: [
+      "Deployed a marketing website on AWS S3 with CloudFront CDN for a digital marketing agency, enabling globally distributed content delivery and reliable hosting.",
+      "Configured custom domain routing via CNAME records, connecting the client's domain to CloudFront distribution for a professional and performant web presence.",
+      "Implemented feature updates and enhancements requested by stakeholders, delivering iterative improvements throughout the engagement.",
+    ],
+  },
+  {
     period: "2025 May - Dec",
     title: "Cloud Architecture & Administration (Postgrad)",
     subtitle: "Seneca Polytechnic - Toronto",
