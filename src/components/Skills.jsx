@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import "hover.css/css/hover-min.css";
 import { IoLogoJavascript } from "react-icons/io";
 import { IoLogoReact } from "react-icons/io5";
-import { FaNode, FaDocker, FaLinux, FaAws, FaShieldAlt } from "react-icons/fa";
+import { FaNode, FaDocker, FaLinux, FaAws, FaShieldAlt, FaCloud } from "react-icons/fa";
 import {
   SiAnsible,
   SiMongodb,
@@ -18,9 +18,6 @@ import {
   SiPrometheus,
   SiGrafana,
   SiPython,
-  SiMicrosoftazure,
-  SiAzuredevops,
-  SiAmazoncloudwatch,
 } from "react-icons/si";
 import { TbBrandGithub } from "react-icons/tb";
 import "../Stylesheet/Skills.css";
@@ -32,7 +29,7 @@ const skillCategories = [
     accent: "accent-cloud",
     skills: [
       { icon: <FaAws />, label: "Amazon Web Services" },
-      { icon: <SiMicrosoftazure />, label: "Microsoft Azure" },
+      { icon: <FaCloud />, label: "Microsoft Azure" },
       { icon: <FaDocker />, label: "Docker" },
       { icon: <SiKubernetes />, label: "Kubernetes" },
       { icon: <SiHelm />, label: "Helm" },
@@ -65,7 +62,7 @@ const skillCategories = [
       { icon: <SiPrometheus />, label: "Prometheus" },
       { icon: <SiGrafana />, label: "Grafana" },
       { icon: <SiPrometheus />, label: "Alertmanager" },
-      { icon: <SiAmazoncloudwatch />, label: "CloudWatch" },
+      { icon: <FaCloud />, label: "CloudWatch" },
     ],
   },
   {
@@ -98,7 +95,7 @@ const skillCategories = [
     accent: "accent-collab",
     skills: [
       { icon: <TbBrandGithub />, label: "Git & GitHub" },
-      { icon: <SiAzuredevops />, label: "Azure DevOps" },
+      { icon: <FaCloud />, label: "Azure DevOps" },
     ],
   },
 ];
