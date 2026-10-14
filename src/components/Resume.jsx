@@ -12,6 +12,17 @@ const terraformWeeklyNewsletterIssue280Url =
 
 const timeline = [
   {
+    period: "Oct 2024 - Present",
+    title: "Cloud Engineer (Contract, Part-Time)",
+    subtitle: "OutHere Online | Mississauga, ON",
+    bullets: [
+      "Architected and deployed a headless web platform by hosting a React single-page application on AWS S3 with CloudFront CDN distribution, configuring custom domain routing and edge caching to achieve sub-second load times.",
+      "Engineered multi-stage CI/CD pipeline that automated static build syncs to S3, and CloudFront cache invalidations, cutting release deployment cycles from hours to under 10 minutes.",
+      "Containerized supporting web services with Docker and deployed them to AWS ECS, establishing auto-scaling and zero-downtime rolling updates to replace inconsistent local hosting environments.",
+      "Owned end-to-end cloud infrastructure and operational reliability on AWS, managing DNS records, SSL/TLS certificates, and production updates to sustain 99.99% platform availability.",
+    ],
+  },
+  {
     period: "2026 Jan - Apr",
     title: "Information Technology Analyst, DevOps & Infrastructure (Co-op)",
     subtitle:
@@ -21,16 +32,6 @@ const timeline = [
       "Authored PowerShell automation for a 150-machine Citrix VDA upgrade, compressing a ~190-hour manual process to 12 hours of unattended runtime, a 93% reduction in manual effort and time.",
       "Automated network device and circuit provisioning in NetBox using Python, eliminating manual router record updates and switch entry creation across production network infrastructure.",
       "Authored and shepherded 100+ infrastructure Change Requests spanning network patching, Windows patching, and data centre maintenance across 21 sites through full CAB approval with a 100% approval rate, including several expedited changes requiring accelerated review cycles.",
-    ],
-  },
-  {
-    period: "2024 Oct - 2026 Apr",
-    title: "AWS Cloud Deployment Specialist (Part-Time/On-call)",
-    subtitle: "OutHere Online | Mississauga, ON",
-    bullets: [
-      "Deployed a marketing website on AWS S3 with CloudFront CDN for a digital marketing agency, enabling globally distributed content delivery and reliable hosting.",
-      "Configured custom domain routing via CNAME records, connecting the client's domain to CloudFront distribution for a professional and performant web presence.",
-      "Implemented feature updates and enhancements requested by stakeholders, delivering iterative improvements throughout the engagement.",
     ],
   },
   {
