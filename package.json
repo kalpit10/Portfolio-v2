@@ -12,7 +12,6 @@
     "@testing-library/user-event": "^14.6.8",
     "antd": "^6.6.6",
     "aos": "^2.3.4",
-    "emailjs": "^5.0.3",
     "framer-motion": "^14.2.0",
     "hover.css": "^2.3.2",
     "lucide-react": "^1.57.0",
