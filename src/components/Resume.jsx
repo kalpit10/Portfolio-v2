@@ -152,7 +152,7 @@ function Resume() {
 
   useEffect(() => {
     toast.info("Welcome to Kalpit Swami's Resume!", {
-      position: toast.POSITION.TOP_RIGHT,
+      position: "top-right",
     });
   }, []);
 
